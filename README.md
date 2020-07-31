@@ -7,9 +7,9 @@ submission of work. The work required will be completed on your local machine,
 so in this lesson, we will go over how to download (also known as
 forking and cloning), complete, and submit an assignment.
 
-In fact, this lesson is actually your _first_ Canvas assignment! Your task
-for this assignment is to go through the process of downloading, completing and
-submitting. Follow the instructions below for more information.
+This lesson is your _first_ Canvas assignment! Your task for this assignment is
+to go through the process of downloading, completing, and submitting. Follow the
+instructions below for more information.
 
 ## Types of Assignments
 
@@ -44,7 +44,7 @@ The majority of assignments will be labs and code-alongs. For each lab and
 code-along, Canvas displays the written instructions. However, the actual coding
 work must be completed on your local machine.
 
-The following steps with walk through the process of getting the assignment onto
+The following steps walk through the process of getting the assignment onto
 your computer. Follow along using this current assignment.
 
 > **Note:** In order to work on and submit assignments, you will need to connect
@@ -75,7 +75,7 @@ the original copy.
 ### Cloning to Your Local Machine
 
 Once an assignment fork has been created, you'll need to download it to your
-local machine. To do this, on your personal GitHub fork of the assignment first
+local machine. To do this, on your personal GitHub fork of the assignment, first
 click the **Code** button. A pop-up will appear that says **Clone with HTTPS**.
 You'll see a URL provided starting with `https://...`.
 
@@ -95,7 +95,7 @@ From here, click the clipboard icon.
 Now, open to your terminal and navigate to where you'd like to download the
 assignment. For instance, if you followed the local environment setup
 instructions, you might have a `Flatiron` folder with a `code` sub-folder.
-To get to that folder, you'd run the following commandns:
+To get to that folder, you'd run the following commands:
 
 ```sh
 cd Flatiron
@@ -106,7 +106,7 @@ You can always make a new folder with `mkdir` followed by the name of your
 folder, if you want to do so now.
 
 Once you've navigated to where you'd like to store assignments, type
-`git clone `, then paste in the copied text from GitHub. It should look
+`git clone ` then paste in the copied text from GitHub. It should look
 something like this:
 
 ```bash
@@ -114,8 +114,8 @@ git clone git@github.com:<your-user-name>/welcome-completing-assignments.git
 ```
 
 Press enter, and you should see a flurry of terminal activity. Once the terminal
-gives you control to type again, you should have a new folder with the GitHub
-name of the assignment. Change directory into this folder to access the
+gives you control to type again, a new folder with the GitHub name of the
+assignment will be present. Change directory into this folder to access the
 assignment files.
 
 ```sh
@@ -123,7 +123,7 @@ cd welcome-completing-assignments
 ```
 
 Now, if you've set up VS Code, type `code .` to open up a text editor window with
-access to all of the assignments files.
+access to all of the assignment's files.
 
 ### Completing and Submitting an Assignment
 
@@ -142,7 +142,7 @@ on your local machine, then type the following:
 learn test
 ```
 
-This will again cause a flurry of activity in your terminal. After a few
+This command will again cause a flurry of activity in your terminal. After a few
 moments, you should see the test results printed out. For this assignment,
 they should look like this:
 
@@ -160,11 +160,11 @@ Congratulations! You've passed the test.
 > some sort of error, walk through the steps in this lesson again and make sure
 > you've followed each one. If you're still receiving errors, we recommend going
 > back to your Welcome course in Canvas and walking through the local
-> environment setup instructions again to ensure everything is setup properly.
+> environment setup instructions again to ensure everything is set up properly.
 
 When all tests are passing, you can head back to the assignment on Canvas.
 Refresh the assignment page and you should see that Canvas now registers the
-assignment as **Complete** and you will be ready to move on to the next lesson.
+assignment as **Complete**, and you will be ready to move on to the next lesson.
 
 Each assignment will be different and will include instructions on what is
 required to complete it. Some labs will have many tests. You can run
@@ -176,19 +176,19 @@ marked **Incomplete** until all tests are passing.
 
 Some assignments do not include tests, but still require some participation on
 your part. For these, follow the same process - you will still need to go
-through forking, cloning, and running `learn test`. This will submit your fork
-of the assignment and mark it as complete.
+through forking, cloning, and running `learn test`. This command will submit
+your fork of the assignment and mark it as complete.
 
 ## Submitting Projects and Blogs
 
 Canvas assignments will also be used for submitting portfolio projects and
-blogs. For these, the process will be different. For projects, you'll likely be
-building from scratch rather than forking and cloning. For blogs, you'll be
-writing your blog posts on some other platform online.
+blogs. For these assignments, the process will be different. For projects,
+you'll likely be building from scratch rather than forking and cloning. For
+blogs, you'll be writing your blog posts on some other platform online.
 
-In both cases, you'll need to manually submit a link to your work on Canvas.
+In both cases, you'll need to submit a link to your work on Canvas manually.
 While viewing the assignment, you should see a **Submit Assignment** button in
-the upper right section of the page.
+the upper-right section of the page.
 
 ![submit assignment button](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas.png)
 
@@ -204,8 +204,6 @@ has been accepted.
 > However, the assignment will only be marked as submitted, not complete.
 
 ## Conclusion
-
-
 
 You've completed your first assignment! You now know how to work on and submit
 assignments:
