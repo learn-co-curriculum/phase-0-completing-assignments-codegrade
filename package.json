@@ -1,0 +1,30 @@
+{
+  "name": "welcome-completing-assignments",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-co-curriculum/welcome-completing-assignments.git"
+  },
+  "author": "maxwellbenton <maxwellbenton@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learn-co-curriculum/welcome-completing-assignments/issues"
+  },
+  "homepage": "https://github.com/learn-co-curriculum/welcome-completing-assignments#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "expect": "^1.20.2",
+    "jsdom": "^9.2.0",
+    "mocha": "^6.1.4",
+    "mocha-jsdom": "~1.1.0",
+    "mocha-multi": "^1.1.0"
+  },
+  "dependencies": {
+    "chai-fs": "^2.0.0"
+  }
+}
