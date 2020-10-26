@@ -93,12 +93,11 @@ From here, click the clipboard icon.
 ![copy to clipboard button](https://curriculum-content.s3.amazonaws.com/copy-clone-command-button.png)
 
 Now, open to your terminal and navigate to where you'd like to download the
-assignment. For instance, if you followed the local environment setup
-instructions, you might have a `Flatiron` folder with a `code` sub-folder.
+assignment. For instance, you might have a `Development` folder with a `code` sub-folder.
 To get to that folder, you'd run the following commands:
 
 ```sh
-cd Flatiron
+cd Development
 cd code
 ```
 
