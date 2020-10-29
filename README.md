@@ -25,9 +25,9 @@ your computer from Canvas. Follow along using this current assignment.
 
 > **Note:** In order to work on and submit assignments, you will need to connect
 > your GitHub account to your Learn.co account. For more information on this,
-> check out [this help article][]
+> check out [this help article][github to learn]
 
-[this help article]: https://help.learn.co/en/articles/493055-connecting-github-with-learn
+
 
 ### A Quick Note on Organizing Work on Your Machine
 
@@ -66,9 +66,11 @@ button is present, it means this assignment requires work on your local machine.
 Forking is a process where an exact copy is made of a collection of code and
 files. Clicking the **Fork** button copies our original version of an assignment
 over to your personal GitHub account, then redirects you to that new copy.
-
 Forking will allow you to write your own code solution without interfering with
 the original copy.
+
+If clicking the **Fork** button does not bring you to GitHub, check to make sure that you
+have [connected your GitHub account to Flatiron School][github to learn].
 
 > **Note:** In GitHub, there is a **Fork** button, as well. However, this button
 > **will not communicate with Flatiron School** - we won't know you've forked the assignment,
@@ -235,3 +237,5 @@ assignments:
   branch
 
 Equipped with this knowledge, you are now ready to tackle greater challenges!
+
+[github to learn]: https://help.learn.co/en/articles/493055-connecting-github-with-learn
