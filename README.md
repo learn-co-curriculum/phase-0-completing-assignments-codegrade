@@ -1,4 +1,4 @@
-# Completing Assignments
+# Complete Your First Software Engineering Assignment
 
 ## Introduction
 
