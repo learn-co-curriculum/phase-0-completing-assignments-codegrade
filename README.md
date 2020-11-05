@@ -103,7 +103,7 @@ From here, click the clipboard icon.
 ![copy to clipboard button](https://curriculum-content.s3.amazonaws.com/copy-clone-command-button.png)
 
 Now, open to your terminal and navigate to where you'd like to download the
-assignment (i.g. `cd ~/Development/code`).
+assignment (e.g. `cd ~/Development/code`).
 
 Once you've navigated to where you'd like to store assignments, type
 `git clone ` then paste in the copied text from GitHub. It should look
@@ -183,7 +183,7 @@ contains the work you've done so far.
 
 ## Types of Assignments
 
-For most assignments, you will go the process we just walked through. In our
+For most assignments, you will go through the process we just walked through. In our
 curriculum, these assignments are often referred to as **labs** - coding lessons
 that include tests. There are a few other types of assignments, though, that
 require slightly different submission steps:
