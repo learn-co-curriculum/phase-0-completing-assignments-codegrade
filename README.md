@@ -3,31 +3,22 @@
 ## Introduction
 
 During this course, you will work on various assignments as you learn to
-code. Starting in Phase 1, all assignments will be interactive pieces of curriculum
-that require a submission of work. For each assignment, you will need to complete
-some work on your local machine, then submit it to Canvas. If the assignment includes
-tests, you will need to pass all tests before Canvas will register the assignment as
-**Complete**.
+code. All assignments will be interactive pieces of curriculum
+that require some work. Some assignments may ask you to follow a set of instructions,
+while others will ask you to figure out your own solution to pass specific tests.
 
-You'll first see an assignment's instructions here, in Canvas. Howeer, the work you'll
-be doing will be on your local machine. In order to work on an assignment, you'll need
-to get it 'forked' and 'cloned' to your computer.
+All assignments are hosted on GitHub. In order to work on them, however, you will need to
+complete work on your local machine. The general process for all assignments will be:
 
-When you've finished your work, you will need to use Flatiron School's submission
-tool, the `learn-co` gem, to submit your work on Canvas.
+- Go to the assignment's GitHub page
+- Create a personal copy (a 'fork') of the assignment
+- Download your personal copy (referred to as 'cloning') to your environment
+- Complete the required work
+- Upload the work you've done to your personal copy of the assignment on GitHub
 
-In this lesson, we'll walk through the full process. In fact, this lesson is the first
-Canvas assignment you'll be completing on your own! 
-
-Your task for this lesson is to go through the process of downloading, completing,
-and submitting your completed assignment. The following steps walk through the process of getting an assignment onto
-your computer from Canvas. Follow along using this current assignment.
-
-> **Note:** In order to work on and submit assignments, you will need to connect
-> your GitHub account to your Learn.co account. For more information on this,
-> check out [this help article][github to learn]
-
-
+For this lesson, we'll do a quick walkthrough of these steps so you will know what to
+do in future assignments. In fact, this lesson is the first assignment you'll be completing
+on your own! 
 
 ### A Quick Note on Organizing Work on Your Machine
 
@@ -36,45 +27,41 @@ a moment now to think about how you'll organize this work on your computer. You 
 to do what you like, but we recommend setting up a directory where you can keep all of your
 work for this course.
 
-- Go to your terminal and navigate to your home director by typing `cd ~`
-- Create a `Development` folder by typing `mkdir Development` (if you're a mac user, this folder exists)
+- Go to your terminal and navigate to your home directory by typing `cd ~`
+- Create a `Development` folder by typing `mkdir Development` (if you're a mac user, this folder already exists)
 - Navigate into this folder with `cd Development`
 - In here, create a `code` folder with `mkdir code`
 - Navigate into this folder with `cd code`
 
 You'll be going through multiple phases in this course, so it may also be helpful to go one step further
-and create folders for phases 1 through 5 within `code`.
+and create folders for phases 0 through 5 within `code`.
 
 Having a specific place for your work will make it easier to find if you ever need to look back at an
 earlier project. It'll also keep the rest of your computer's folders clear of random code.
 
-The process we'll go through in this lesson will create sub-folders automatically. Whenever you are
-starting a new assignment, navigate back to your main `code` folder (`cd ~/Development/code`) to ensure
-these sub-folders don't get created _within each other_.
+> **Note:** The process we'll go through in this lesson will create sub-folders automatically. Whenever you are
+> starting a new assignment, navigate back to your main `code` folder (`cd ~/Development/code`) to ensure
+> these sub-folders don't get created _within each other_.
 
 ### Starting an Assignment - Forking
 
-On the assignment's page in Canvas, you'll see three buttons in the upper right
-corner of the assignment's text. The first is a **Fork** button. When this
-button is present, it means this assignment requires work on your local machine.
+On this assignment's page, you should see two icons in the upper right
+corner of the assignment's text. The first is a button that looks like a large
+headed cat. This is 'Octocat,' GitHub's icon/mascot. The second is a flag. Click
+the Octocat button to open this assignment in GitHub.
 
 <figure>
-  <img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" alt="fork link" height="25px">
+  <img src="https://curriculum-content.s3.amazonaws.com/git-logo-gray.png" alt="github link" height="25px">
   <figcaption><sm>This is just a picture, the button is up at the top of the page</sm></figcaption>
 </figure>
 
 Forking is a process where an exact copy is made of a collection of code and
-files. Clicking the **Fork** button copies our original version of an assignment
-over to your personal GitHub account, then redirects you to that new copy.
-Forking will allow you to write your own code solution without interfering with
-the original copy.
-
-If clicking the **Fork** button does not bring you to GitHub, check to make sure that you
-have [connected your GitHub account to Flatiron School][github to learn].
-
-> **Note:** In GitHub, there is a **Fork** button, as well. However, this button
-> **will not communicate with Flatiron School** - we won't know you've forked the assignment,
-> and your assignment won't submit successfully in Canvas.
+files. Forking will allow you to write your own code solution without interfering with
+the original copy. To fork this assignment, in GitHub, click the **Fork** button in the
+upper right corner of the page. You may be prompted to select where you would like to
+create your fork - choose your personal GitHub account. The forking process will begin and may take
+a few moments. When complete, you will be redirected to a new copy of the assignment that exists under
+_your_ GitHub account. You've successfully forked the assignment.
 
 ### Cloning to Your Local Machine
 
@@ -126,7 +113,7 @@ Now, if you've set up VS Code, type `code .` to open up a text editor window wit
 access to all of the assignment's files. The instructions are now also available on
 your local machine in `README.md`.
 
-### Completing and Submitting an Assignment
+### Completing an Assignment
 
 Most assignments will have tests that check your work and provide immediate
 feedback in the terminal. We'll walk through some examples in upcoming lessons.
@@ -136,17 +123,25 @@ assignment to your local machine. If you've followed the steps above, you've
 completed everything you need to do to pass the test, all that is left to do is
 run it.
 
-To run an assignment's tests, make sure you're still in the assignment's folder
-on your local machine, then type the following:
+To run an assignment's tests, first you'll need to set up the tools used to
+run the test. Fortunately, all the tools required are included as part of the
+assignment, so all you need to do is type the following:
 
 ```sh
-learn test
+npm install
 ```
 
 This command will again cause a flurry of activity in your terminal. You may see
 some warnings in the mix of output, but that is normal. After a few
-moments, you should see the test results printed out. For this assignment,
-they should look like this:
+moments, you should see some messaging about packages being added and regain
+control of the command-line. You're now ready to run this assignment's tests. Type
+the following to do so:
+
+```sh
+npm test
+```
+
+You should see the test results print out. For this assignment, they'll look like this:
 
 ```sh
 This assignment
@@ -156,7 +151,7 @@ This assignment
   1 passing (5ms)
 ```
 
-Congratulations! You've passed the test.
+Congratulations! You've passed this assignment's test.
 
 > **Note:** If you did not receive a passing test, or if your terminal produced
 > some sort of error, walk through the steps in this lesson again and make sure
@@ -164,78 +159,77 @@ Congratulations! You've passed the test.
 > back through the local environment setup instructions again to ensure everything
 > is set up properly.
 
-When all tests are passing, you can head back to the assignment on Canvas.
-Refresh the assignment page and you should see that Canvas now registers the
-assignment as **Complete**, and you will be ready to move on to the next lesson.
+## Uploading Your Work
 
-Each assignment will be different and will include instructions on what is
-required to complete it. Some labs will have many tests. You can run
-`learn test` as many times as you'd like while working to solve these labs. You
-will submit your work to Canvas each time you do, but the assignment will be
-marked **Incomplete** until all tests are passing.
+When all tests are passing, the last step is to upload your work. To do this, we
+run three commands in the terminal. First, type the following, then press `<Enter>`:
 
-### Your Work in GitHub
+```sh
+git add .
+```
 
-Every time you run `learn test`, all the changes you've made locally will be stored
-on your GitHub fork of the repo. If you head back to your repo after running `learn test`,
-you should see a message that a new branch, `fis-wip`, has been created. This branch
-contains the work you've done so far.
+This 'stages' any work you've done (changes to your local copy of an assignment) so
+it will be ready to upload.
 
-## Types of Assignments
+Second, we create a record of these changes that includes a message describing the
+change. Type the following, then press `<Enter>`:
 
-For most assignments, you will go through the process we just walked through. In our
-curriculum, these assignments are often referred to as **labs** - coding lessons
-that include tests. There are a few other types of assignments, though, that
-require slightly different submission steps:
+```sh
+git commit -m 'Done with assignment'
+```
 
-- **Code-alongs:** These also require code, but will guide you through what
-  needs to be written. There are no tests to pass, but you will still need to go
-  through forking, cloning, and running `learn test`.
-- **Portfolio Projects:** For these assignments, you'll be building fully functional
-  applications. Some guidelines and requirements will be provided, but it will
-  be up to you to design and create your own app. These will eventually become
-  the projects you showcase to potential employers!
-- **Blog Submissions:** Blogs are a required part of our Software Engineering
-  courses. They help to develop your online presence and are a great way to
-  reinforce the concepts you learn. You'll write your blog posts on a different
-  platform, but submit links to them in Canvas.
+This is known as creating a 'commit.' A commit preserves all _staged_ changes from the
+previous command. Any work you've done is now recorded as part of your copy of the assignment.
+This copy, however, is still only on your local environment.
 
-## Submitting Projects and Blogs
+To upload your completed assignment, there is one final command to run. Type the following, then
+press `<Enter>`:
 
-For project and blog assignments, you will not use the forking and cloning process. For projects,
-you'll likely be building from scratch rather than forking and cloning existing content. For
-blogs, you'll be writing your blog posts on some other platform online.
+```sh
+git push
+```
 
-In both cases, you'll need to manually submit a link to your work on Canvas.
-While viewing the assignment, you should see a **Submit Assignment** button in
-the upper-right section of the page.
+This command sends the changes you've made to GitHub. If you revisit your personal copy of the assignment on GitHub,
+the commit you just created (with the message 'Done with assignment') will be the most recent commit on the assignment.
 
-![submit assignment button](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas.png)
+Each assignment will be slightly different and will include instructions on what is
+required to complete it. Depending on the testing tools in an assignment, the specific
+commands may change. For this lesson, we ran `npm install` and `npm test`; `npm install` to
+set up the necessary tools, and `npm test` run the actual test.
 
-Clicking this button will bring you to the bottom of the page where you can
-submit a URL link to your work.
+You'll also see some assignments that ask you to run `bundle` and `rspec` - `bundle`, like `npm install`,
+will set up necessary tools and `rspec` will run the tests. We'll include instructions
+indicating which commands to run. In all cases, you can run the tests as many times as you would like.
+Some labs will have many tests and may require running the tests many times while you solve them.
 
-![submit assignment form](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas-form.png)
+## Review
 
-Upon submission you should see confetti appear, indicating that your submission
-has been accepted.
+Let's quickly review the process for completing assignments:
 
-> **Note:** It is possible to submit lab and code-along assignments this way.
-> However, the assignment will only be marked as submitted, not complete.
+1) When viewing an assignment here, click the **Octocat** GitHub icon in the upper right corner of an assignment to navigate
+to the GitHub copy.
+2) Create a personal fork of the GitHub assignment by clicking the **Fork** button.
+3) Once forked to your personal account, start the **cloning** for your assignment. Do this by clicking the **Code** button in GitHub,
+choosing **SSH**, then clicking the **clipboard** icon to copy the assignment's GitHub info.
+4) Go to your local environment's terminal and navigate to where you'd like to store your assignment locally.
+5) Type `git clone `, then paste in what you copied from GitHub. This will create a copy on your local machine.
+6) Navigate into the new cloned assignment and complete any work required
+7) Install testing tools with `npm install` (or `bundle` if tests use Ruby)
+8) Run tests with `npm test` (or `rspec` for Ruby)
+9) If all tests are passing, stage and commit your solution with the following commands
+
+  ```sh
+  git add .
+  git commit -m 'Done with assignment'
+  ```
+  
+10) Push your work to your personal fork on GitHub with the `git push` command
 
 ## Conclusion
 
 You've completed your first assignment! You now know how to work on and submit
-assignments:
-
-- Click the **Fork** button on the Canvas assignment
-- Once the assignment is forked, clone it down to your local machine
-- Complete any required work, then run `learn test`
-- If all tests pass, the assignment will be submitted to Canvas and marked as
-  **Complete**
-- Your work will also be pushed to GitHub and will be available on the `fis-wip`
-  branch
-
-Equipped with this knowledge, you are now ready to tackle greater challenges!
+assignments. We'll remind you of this process in upcoming lessons, but we recommend
+bookmarking this lesson so you can refer back here in case you forget. Equipped with this
+knowledge, you are now ready to tackle greater challenges!
 
 [github to learn]: https://help.learn.co/en/articles/493055-connecting-github-with-learn
