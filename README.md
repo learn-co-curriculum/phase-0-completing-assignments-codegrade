@@ -43,30 +43,37 @@ earlier project. It'll also keep the rest of your computer's folders clear of ra
 > starting a new assignment, navigate back to your main `code` folder (`cd ~/Development/code`) to ensure
 > these sub-folders don't get created _within each other_.
 
-### Starting an Assignment - Forking
+### Accessing GitHub and Forking
 
-On this assignment's page, you should see two icons in the upper right
-corner of the assignment's text. The first is a button that looks like a large
-headed cat. This is 'Octocat,' GitHub's icon/mascot. The second is a flag. Click
-the Octocat button to open this assignment in GitHub.
+All the lessons in this course have a corresponding repository in GitHub. In order to fork this assignment, you'll
+first need to go to that repository. On this page in Canvas, you should see three
+icons in the **upper right** corner of the assignment's text. The first says **Fork**. The second is a button
+that looks like a large headed cat. The third is a flag. All three buttons will bring you to GitHub, but we only
+need to deal with the **Fork** button. 
 
 <figure>
-  <img src="https://curriculum-content.s3.amazonaws.com/git-logo-gray.png" alt="github link" height="25px">
+  <img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" alt="fork link" height="25px">
   <figcaption><sm>This is just a picture, the button is up at the top of the page</sm></figcaption>
 </figure>
 
-Forking is a process where an exact copy is made of a collection of code and
-files. Forking will allow you to write your own code solution without interfering with
-the original copy. To fork this assignment, in GitHub, click the **Fork** button in the
-upper right corner of the page. You may be prompted to select where you would like to
-create your fork - choose your personal GitHub account. The forking process will begin and may take
-a few moments. When complete, you will be redirected to a new copy of the assignment that exists under
-_your_ GitHub account. You've successfully forked the assignment.
+
+Clicking the **Fork** button will do one of two things - it will either start the forking process or bring you to
+a page where you select where you to create your fork. If you're prompted to choose, select your personal GitHub account.
+The forking process will begin and may take a few moments. When complete, you will be redirected to a new copy of the
+assignment that exists under _your_ GitHub account. 
+
+Forking is a process where an exact copy is made of a collection of code and files. Once you've created a fork on your
+own GitHub account, you will be able to edit the files in the repository and write your own code solution without interfering with
+the original copy. 
+
+Go ahead and fork this assignment. The `README.md` file in the repository contains these instructions, so you can continue here or
+in GitHub.
+
+With a fork created, the next step is to download your new repository to your local machine.
 
 ### Cloning to Your Local Machine
 
-Once an assignment fork has been created, you'll need to download it to your
-local machine. To do this on your personal GitHub fork, first
+To download the repository for this lesson, on your personal GitHub fork, first
 click the **Code** button. A pop-up will appear that says **Clone with HTTPS**.
 You'll see a URL provided starting with `https://...`.
 
