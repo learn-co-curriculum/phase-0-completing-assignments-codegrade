@@ -166,7 +166,7 @@ Congratulations! You've passed this assignment's test.
 > back through the local environment setup instructions again to ensure everything
 > is set up properly.
 
-## Uploading Your Work
+## Uploading Your Work to GitHub
 
 When all tests are passing, the last step is to upload your work. To do this, we
 run three commands in the terminal. First, type the following, then press `<Enter>`:
@@ -209,20 +209,42 @@ will set up necessary tools and `rspec` will run the tests. We'll include instru
 indicating which commands to run. In all cases, you can run the tests as many times as you would like.
 Some labs will have many tests and may require running the tests many times while you solve them.
 
+## Uploading Your Work To Canvas
+
+To register completion of an assignment in Canvas, you must submit a link to your GitHub repository. 
+
+1) After pushing your code up following the previous steps, go to your repository and copy the URL link.
+
+2) In Canvas, navigate to the assignment you've been working on. In the upper right corner of the assignment, you should see
+a **Submit Assignment** button. You'll be directed to the bottom of the page, where you can provide a URL as your submission.
+
+3) Paste in your repository's GitHub URL and click **Submit**.
+
+Canvas will indicate a successful submission and refresh the page. In the Modules view of your course, you should now see a
+checkmark next to the assignment, indicating a successful submission.
+
 ## Review
 
 Let's quickly review the process for completing assignments:
 
 1) When viewing an assignment here, click the **Octocat** GitHub icon in the upper right corner of an assignment to navigate
 to the GitHub copy.
+
 2) Create a personal fork of the GitHub assignment by clicking the **Fork** button.
+
 3) Once forked to your personal account, start the **cloning** for your assignment. Do this by clicking the **Code** button in GitHub,
 choosing **SSH**, then clicking the **clipboard** icon to copy the assignment's GitHub info.
+
 4) Go to your local environment's terminal and navigate to where you'd like to store your assignment locally.
+
 5) Type `git clone `, then paste in what you copied from GitHub. This will create a copy on your local machine.
+
 6) Navigate into the new cloned assignment and complete any work required
+
 7) Install testing tools with `npm install` (or `bundle` if tests use Ruby)
+
 8) Run tests with `npm test` (or `rspec` for Ruby)
+
 9) If all tests are passing, stage and commit your solution with the following commands
 
   ```sh
@@ -231,6 +253,13 @@ choosing **SSH**, then clicking the **clipboard** icon to copy the assignment's 
   ```
   
 10) Push your work to your personal fork on GitHub with the `git push` command
+
+11) Go to your repository in GitHub and copy the URL
+
+12) Go to the assignment in Canvas and click **Submit Assignment**
+
+13) Paste in your GitHub URL as your submission
+
 
 ## Conclusion
 
