@@ -8,8 +8,7 @@ Some assignments may ask you to follow a set of instructions, while others will
 ask you to figure out your own solution to pass specific tests.
 
 All assignments are hosted on GitHub. In order to work on them, however, you
-will need to complete work on your local machine. The general process for all
-assignments will be:
+will need to complete work on your local machine. The general process is:
 
 - Go to the assignment's GitHub page
 - Create a personal copy (a 'fork') of the assignment
@@ -50,26 +49,33 @@ computer's folders clear of random code.
 
 ### Accessing GitHub and Forking
 
-All the lessons in this course have a corresponding repository in GitHub. In
-order to fork this assignment, you'll first need to go to that repository. On
-this page in Canvas, you should see three icons in the **upper right** corner of
-the assignment's text. The first says **Fork**. The second is a button that
-looks like a large headed cat. The third is a flag. All three buttons will bring
-you to GitHub, but we only need to deal with the **Fork** button.
+All the lessons in this course have a corresponding repository in GitHub. On
+this page in Canvas, you should see three icons in the **upper right** corner.
+The first says **Fork**. The second is a button that looks like a large-headed
+cat (GitHub's 'Octocat' icon); this button will open the lesson's GitHub repo
+_without_ forking. The third is a flag, which you can use to submit an _issue_
+for the lesson (e.g., if you find a typo or other error).
+
+One way to fork an assignment is to click the Octocat button to go to the
+assignment's GitHub repo and fork directly from that page. (We'll go through
+that process in a later lesson.) However, the easiest way to fork the assignment
+is by clicking the **Fork** button. Either method will work, but we recommend
+you use the **Fork** button because it will automate some assignment steps for
+you when you get a bit farther along in the curriculum.
 
 <figure>
   <img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" alt="fork link" height="25px">
   <figcaption><sm>This is just a picture, the button is up at the top of the page</sm></figcaption>
 </figure>
 
-Clicking the **Fork** button will do one of two things - it will either start
+Clicking the **Fork** button will do one of two things — it will either start
 the forking process or bring you to a page where you select where to create your
 fork. If you're prompted to choose, select your personal GitHub account. The
 forking process will begin and may take a few moments. When complete, you will
 be redirected to a new copy of the assignment that exists under _your_ GitHub
 account.
 
-Forking is a process where an exact copy is made of a collection of code and
+Forking is a process which creates an exact copy of a collection of code and
 files. Once you've created a fork on your own GitHub account, you will be able
 to edit the files in the repository and write your own code solution without
 interfering with the original copy.
@@ -91,7 +97,8 @@ You'll see a URL provided starting with `https://...`.
 **Before doing anything else**, make sure to switch from **HTTPS** to **SSH** by
 clicking the **Use SSH** link. When clicked, the pop-up will change to display
 **Clone with SSH**. Instead of a URL, you'll see what sort of looks like an
-email, starting with `git@github.com:`.
+email, starting with `git@github.com:`. You should see your GitHub name after
+the `:`.
 
 ![clone with ssh option](https://curriculum-content.s3.amazonaws.com/canvas-welcome/clone-with-ssh.png)
 
@@ -99,8 +106,9 @@ email, starting with `git@github.com:`.
 > your personal SSH key to GitHub. GitHub will store your personal copies of all
 > the work you do in this course. Because you've added your SSH key, GitHub will
 > know who you are when you send work from your local machine to GitHub to be
-> stored. HTTPS may not work for all assignments and will require you to sign-in
-> from your terminal.
+> stored. Using HTTPS instead would require you to sign in from your terminal
+> using your log-in credentials each time you try to push your code to GitHub;
+> it also may not work at all for some assignments.
 
 From here, click the clipboard icon.
 
@@ -148,7 +156,7 @@ npm install
 This command will again cause a flurry of activity in your terminal. You may see
 some warnings in the mix of output, but that is normal. After a few moments, you
 should see some messaging about packages being added and regain control of the
-command-line. You're now ready to run this assignment's tests. Type the
+command line. You're now ready to run this assignment's tests. Type the
 following to do so:
 
 ```sh
@@ -217,7 +225,7 @@ specific commands may change. For this lesson, we ran `npm install` and `npm
 test`: `npm install` to set up the necessary tools, and `npm test` to run the
 actual test.
 
-You'll also see some assignments that ask you to run `bundle` and `rspec` -
+You'll also see some assignments that ask you to run `bundle` and `rspec` —
 `bundle`, like `npm install`, will set up necessary tools and `rspec` will run
 the tests. We'll include instructions indicating which commands to run. In all
 cases, you can run the tests as many times as you would like. Some labs will
@@ -247,30 +255,27 @@ assignment, indicating a successful submission.
 
 Let's quickly review the process for completing assignments:
 
-1) When viewing an assignment here, click the **Octocat** GitHub icon in the
-   upper right corner of an assignment to navigate to the GitHub copy.
+1) Create a personal fork of the GitHub assignment by clicking the **Fork**
+   button in the upper right corner of the assignment on Canvas.
 
-2) Create a personal fork of the GitHub assignment by clicking the **Fork**
-   button.
-
-3) Once forked to your personal account, start the **cloning** for your
+2) Once forked to your personal account, start the **cloning** for your
    assignment. Do this by clicking the **Code** button in GitHub, choosing
    **SSH**, then clicking the **clipboard** icon to copy the assignment's GitHub
    info.
 
-4) Go to your local environment's terminal and navigate to where you'd like to
+3) Go to your local environment's terminal and navigate to where you'd like to
    store your assignment locally.
 
-5) Type `git clone`, then paste in what you copied from GitHub. This will
+4) Type `git clone`, then paste in what you copied from GitHub. This will
    create a copy on your local machine.
 
-6) Navigate into the new cloned assignment and complete any work required
+5) Navigate into the new cloned assignment and complete any work required
 
-7) Install testing tools with `npm install` (or `bundle` if tests use Ruby)
+6) Install testing tools with `npm install` (or `bundle` if tests use Ruby)
 
-8) Run tests with `npm test` (or `rspec` for Ruby)
+7) Run tests with `npm test` (or `rspec` for Ruby)
 
-9) If all tests are passing, stage and commit your solution with the following
+8) If all tests are passing, stage and commit your solution with the following
    commands
 
   ```sh
@@ -278,13 +283,13 @@ Let's quickly review the process for completing assignments:
   git commit -m 'Done with assignment'
   ```
   
-10) Push your work to your personal fork on GitHub with the `git push` command
+9) Push your work to your personal fork on GitHub with the `git push` command
 
-11) Go to your repository in GitHub and copy the URL
+10) Go to your repository in GitHub and copy the URL
 
-12) Go to the assignment in Canvas and click **Submit Assignment**
+11) Go to the assignment in Canvas and click **Submit Assignment**
 
-13) Paste in your GitHub URL as your submission
+12) Paste in your GitHub URL as your submission
 
 ## Conclusion
 
@@ -292,5 +297,3 @@ You've completed your first assignment! You now know how to work on and submit
 assignments. We'll remind you of this process in upcoming lessons, but we
 recommend bookmarking this lesson so you can refer back here in case you forget.
 Equipped with this knowledge, you are now ready to tackle greater challenges!
-
-[github to learn]: https://help.learn.co/en/articles/493055-connecting-github-with-learn
