@@ -55,7 +55,7 @@ order to fork this assignment, you'll first need to go to that repository. On
 this page in Canvas, you should see three icons in the **upper right** corner of
 the assignment's text. The first says **Fork**. The second is a button that
 looks like a large headed cat. The third is a flag. All three buttons will bring
-you to GitHub, but we only need to deal with the **Fork** button. 
+you to GitHub, but we only need to deal with the **Fork** button.
 
 <figure>
   <img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" alt="fork link" height="25px">
@@ -63,11 +63,11 @@ you to GitHub, but we only need to deal with the **Fork** button.
 </figure>
 
 Clicking the **Fork** button will do one of two things - it will either start
-the forking process or bring you to a page where you select where you to create
-your fork. If you're prompted to choose, select your personal GitHub account.
-The forking process will begin and may take a few moments. When complete, you
-will be redirected to a new copy of the assignment that exists under _your_
-GitHub account.
+the forking process or bring you to a page where you select where to create your
+fork. If you're prompted to choose, select your personal GitHub account. The
+forking process will begin and may take a few moments. When complete, you will
+be redirected to a new copy of the assignment that exists under _your_ GitHub
+account.
 
 Forking is a process where an exact copy is made of a collection of code and
 files. Once you've created a fork on your own GitHub account, you will be able
@@ -106,11 +106,9 @@ From here, click the clipboard icon.
 
 ![copy to clipboard button](https://curriculum-content.s3.amazonaws.com/copy-clone-command-button.png)
 
-Now, open to your terminal and navigate to where you'd like to download the
-assignment (e.g. `cd ~/Development/code`).
-
-Once you've navigated to where you'd like to store assignments, type `git clone`
-then paste in the copied text from GitHub. It should look something like this:
+Now, open your terminal and navigate to where you'd like to download the
+assignment (e.g. `cd ~/Development/code`). Type `git clone` then paste in the
+copied SSH link from GitHub. It should look something like this:
 
 ```bash
 git clone git@github.com:<your-user-name>/welcome-completing-assignments.git
@@ -136,7 +134,7 @@ feedback in the terminal. We'll walk through some examples in upcoming lessons.
 
 This assignment has a single test: check to see if you've correctly cloned this
 assignment to your local machine. If you've followed the steps above, you've
-completed everything you need to do to pass the test, all that is left to do is
+completed everything you need to do to pass the test; all that is left to do is
 run it.
 
 To run an assignment's tests, first you'll need to set up the tools used to run
@@ -178,7 +176,7 @@ Congratulations! You've passed this assignment's test.
 
 ## Uploading Your Work to GitHub
 
-When all tests are passing, the last step is to upload your work. To do this, we
+When all tests are passing, the next step is to upload your work. To do this, we
 run three commands in the terminal. First, type the following, then press
 `<Enter>`:
 
@@ -216,7 +214,7 @@ assignment.
 Each assignment will be slightly different and will include instructions on what
 is required to complete it. Depending on the testing tools in an assignment, the
 specific commands may change. For this lesson, we ran `npm install` and `npm
-test`; `npm install` to set up the necessary tools, and `npm test` run the
+test`: `npm install` to set up the necessary tools, and `npm test` to run the
 actual test.
 
 You'll also see some assignments that ask you to run `bundle` and `rspec` -
@@ -232,7 +230,7 @@ To register completion of an assignment in Canvas, you must submit a link to
 your GitHub repository.
 
 1) After pushing your code up following the previous steps, go to your
-   repository and copy the URL link.
+   repository and copy the URL link in the browser's URL bar.
 
 2) In Canvas, navigate to the assignment you've been working on. In the upper
    right corner of the assignment, you should see a **Submit Assignment**
