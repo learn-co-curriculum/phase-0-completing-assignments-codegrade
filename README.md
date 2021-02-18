@@ -119,7 +119,7 @@ assignment (e.g. `cd ~/Development/code`). Type `git clone` then paste in the
 copied SSH link from GitHub. It should look something like this:
 
 ```bash
-git clone git@github.com:<your-user-name>/welcome-completing-assignments.git
+git clone git@github.com:<your-user-name>/phase-0-completing-assignments.git
 ```
 
 Press enter, and you should see a flurry of terminal activity. Once the terminal
@@ -128,7 +128,7 @@ assignment will be present. Change directory into this folder to access the
 assignment files.
 
 ```sh
-cd welcome-completing-assignments
+cd phase-0-completing-assignments
 ```
 
 Now, if you've set up VS Code, type `code .` to open up a text editor window
