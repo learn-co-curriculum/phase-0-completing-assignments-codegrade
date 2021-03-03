@@ -215,7 +215,7 @@ git push
 ```
 
 This command sends the changes you've made to GitHub. If you revisit your
-personal copy of the assignment on GitHub, the commit you just created (with the
+_personal_ copy of the assignment on GitHub, the commit you just created (with the
 message 'Done with assignment') will be the most recent commit on the
 assignment.
 
