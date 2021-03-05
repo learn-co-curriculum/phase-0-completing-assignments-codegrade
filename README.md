@@ -17,9 +17,8 @@ will need to complete work on your local machine. The general process is:
 - Complete the required work
 - Upload the work you've done to your personal copy of the assignment on GitHub
 
-For this lesson, we'll do a quick walkthrough of these steps so you will know
-what to do in future assignments. In fact, this lesson is the first assignment
-you'll be completing on your own!
+For this assignment, we'll do a quick walkthrough of these steps so you will know
+what to do in future assignments.
 
 ### A Quick Note on Organizing Work on Your Machine
 
