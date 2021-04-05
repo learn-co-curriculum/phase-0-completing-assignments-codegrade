@@ -285,7 +285,7 @@ Let's quickly review the process for completing assignments:
   
 9) Push your work to your personal fork on GitHub with the `git push` command
 
-10) Go to your repository in GitHub and copy the URL
+10) Go to your repository in GitHub and copy the URL. Note, this should be copied from the browser's address bar, and should start with `https://github.com/`
 
 11) Go to the assignment in Canvas and click **Submit Assignment**
 
