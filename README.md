@@ -297,3 +297,4 @@ Congratulations! You've completed your first assignment! You now know how to wor
 assignments. We'll remind you of this process in upcoming lessons, but we
 recommend bookmarking this lesson so you can refer back here in case you forget.
 Equipped with this knowledge, you are now ready to tackle greater challenges!
+
