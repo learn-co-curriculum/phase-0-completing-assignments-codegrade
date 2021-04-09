@@ -287,7 +287,7 @@ Let's quickly review the process for completing assignments:
 
 10) Go to your repository in GitHub and copy the URL. Note, this should be copied from the browser's address bar, and should start with `https://github.com/`
 
-11) Go to the assignment in Canvas and click **Submit Assignment**
+11) Go to the assignment in Canvas and click **Submit Assignment** (or **Start Assignment**)
 
 12) Paste in your GitHub URL as your submission
 
