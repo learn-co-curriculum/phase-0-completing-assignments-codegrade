@@ -118,8 +118,8 @@ Now, open your terminal and navigate to where you'd like to download the
 assignment (e.g. `cd ~/Development/code`). Type `git clone` then paste in the
 copied SSH link from GitHub. It should look something like this:
 
-```bash
-git clone git@github.com:<your-user-name>/phase-0-completing-assignments.git
+```console
+$ git clone git@github.com:<your-user-name>/phase-0-completing-assignments.git
 ```
 
 Press enter, and you should see a flurry of terminal activity. Once the terminal
@@ -127,8 +127,8 @@ gives you control to type again, a new folder with the GitHub name of the
 assignment will be present. Change directory into this folder to access the
 assignment files.
 
-```sh
-cd phase-0-completing-assignments
+```console
+$ cd phase-0-completing-assignments
 ```
 
 Now, if you've set up VS Code, type `code .` to open up a text editor window
@@ -149,8 +149,8 @@ To run an assignment's tests, first you'll need to set up the tools used to run
 the test. Fortunately, all the tools required are included as part of the
 assignment, so all you need to do is type the following:
 
-```sh
-npm install
+```console
+$ npm install
 ```
 
 This command will again cause a flurry of activity in your terminal. You may see
@@ -159,14 +159,14 @@ should see some messaging about packages being added and regain control of the
 command line. You're now ready to run this assignment's tests. Type the
 following to do so:
 
-```sh
-npm test
+```console
+$ npm test
 ```
 
 You should see the test results print out. For this assignment, they'll look
 like this:
 
-```sh
+```console
 This assignment
     ✓ has been correctly cloned to your local environment
 
@@ -188,8 +188,8 @@ When all tests are passing, the next step is to upload your work. To do this, we
 run three commands in the terminal. First, type the following, then press
 `<Enter>`:
 
-```sh
-git add .
+```console
+$ git add .
 ```
 
 This 'stages' any work you've done (changes to your local copy of an assignment)
@@ -198,8 +198,8 @@ so it will be ready to upload.
 Second, we create a record of these changes that includes a message describing
 the change. Type the following, then press `<Enter>`:
 
-```sh
-git commit -m 'Done with assignment'
+```console
+$ git commit -m 'Done with assignment'
 ```
 
 This is known as creating a 'commit.' A commit preserves all _staged_ changes
@@ -210,8 +210,8 @@ environment.
 To upload your completed assignment, there is one final command to run. Type the
 following, then press `<Enter>`:
 
-```sh
-git push
+```console
+$ git push
 ```
 
 This command sends the changes you've made to GitHub. If you revisit your
@@ -221,9 +221,9 @@ assignment.
 
 Each assignment will be slightly different and will include instructions on what
 is required to complete it. Depending on the testing tools in an assignment, the
-specific commands may change. For this lesson, we ran `npm install` and `npm
-test`: `npm install` to set up the necessary tools, and `npm test` to run the
-actual test.
+specific commands may change. For this lesson, we ran `npm install` and
+`npm test`: `npm install` to set up the necessary tools, and `npm test` to run
+the actual test.
 
 You'll also see some assignments that ask you to run `bundle` and `rspec` —
 `bundle`, like `npm install`, will set up necessary tools and `rspec` will run
@@ -237,15 +237,15 @@ them.
 To register completion of an assignment in Canvas, you must submit a link to
 your GitHub repository.
 
-1) After pushing your code up following the previous steps, go to your
+1. After pushing your code up following the previous steps, go to your
    repository and copy the URL link in the browser's URL bar.
 
-2) In Canvas, navigate to the assignment you've been working on. In the upper
+2. In Canvas, navigate to the assignment you've been working on. In the upper
    right corner of the assignment, you should see a **Submit Assignment**
    button. You'll be directed to the bottom of the page, where you can provide a
    URL as your submission.
 
-3) Paste in your repository's GitHub URL and click **Submit**.
+3. Paste in your repository's GitHub URL and click **Submit**.
 
 Canvas will indicate a successful submission and refresh the page. In the
 Modules view of your course, you should now see a checkmark next to the
@@ -255,46 +255,49 @@ assignment, indicating a successful submission.
 
 Let's quickly review the process for completing assignments:
 
-1) Create a personal fork of the GitHub assignment by clicking the **Fork**
-   button in the upper right corner of the assignment on Canvas.
+**1.** Create a personal fork of the GitHub assignment by clicking the **Fork**
+button in the upper right corner of the assignment on Canvas.
 
-2) Once forked to your personal account, start the **cloning** for your
-   assignment. Do this by clicking the **Code** button in GitHub, choosing
-   **SSH**, then clicking the **clipboard** icon to copy the assignment's GitHub
-   info.
+**2.** Once forked to your personal account, start the **cloning** for your
+assignment. Do this by clicking the **Code** button in GitHub, choosing
+**SSH**, then clicking the **clipboard** icon to copy the assignment's GitHub
+info.
 
-3) Go to your local environment's terminal and navigate to where you'd like to
-   store your assignment locally.
+**3.** Go to your local environment's terminal and navigate to where you'd like
+to store your assignment locally.
 
-4) Type `git clone`, then paste in what you copied from GitHub. This will
-   create a copy on your local machine.
+**4.** Type `git clone`, then paste in what you copied from GitHub. This will
+create a copy on your local machine.
 
-5) Navigate into the new cloned assignment and complete any work required
+**5.** Navigate into the new cloned assignment and complete any work required
 
-6) Install testing tools with `npm install` (or `bundle` if tests use Ruby)
+**6.** Install testing tools with `npm install` (or `bundle` if tests use Ruby)
 
-7) Run tests with `npm test` (or `rspec` for Ruby)
+**7.** Run tests with `npm test` (or `rspec` for Ruby)
 
-8) If all tests are passing, stage and commit your solution with the following
-   commands
+**8.** If all tests are passing, stage and commit your solution with the
+following commands
 
-  ```sh
-  git add .
-  git commit -m 'Done with assignment'
-  ```
-  
-9) Push your work to your personal fork on GitHub with the `git push` command
+```console
+$ git add .
+$ git commit -m 'Done with assignment'
+```
 
-10) Go to your repository in GitHub and copy the URL. Note, this should be copied from the browser's address bar, and should start with `https://github.com/`
+**9.** Push your work to your personal fork on GitHub with the `git push` command
 
-11) Go to the assignment in Canvas and click **Submit Assignment** (or **Start Assignment**)
+**10.** Go to your repository in GitHub and copy the URL. Note, this should be
+copied from the browser's address bar, and should start with
+`https://github.com/`
 
-12) Paste in your GitHub URL as your submission
+**11.** Go to the assignment in Canvas and click **Submit Assignment** (or
+**Start Assignment**)
+
+**12.** Paste in your GitHub URL as your submission
 
 ## Conclusion
 
-Congratulations! You've completed your first assignment! You now know how to work on and submit
-assignments. We'll remind you of this process in upcoming lessons, but we
-recommend bookmarking this lesson so you can refer back here in case you forget.
-Equipped with this knowledge, you are now ready to tackle greater challenges!
-
+Congratulations! You've completed your first assignment! You now know how to
+work on and submit assignments. We'll remind you of this process in upcoming
+lessons, but we recommend bookmarking this lesson so you can refer back here in
+case you forget. Equipped with this knowledge, you are now ready to tackle
+greater challenges!
