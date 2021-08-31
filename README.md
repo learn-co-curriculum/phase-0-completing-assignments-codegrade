@@ -1,5 +1,9 @@
 # Complete Your First Software Engineering Assignment
 
+## Learning Goals
+
+- Understand the steps needed to work on an assignment in GitHub and Canvas
+
 ## Introduction
 
 During this course, you will work on various assignments as you learn to code.
