@@ -245,7 +245,8 @@ your GitHub repository.
    repository and copy the URL link in the browser's URL bar.
 
 2. In Canvas, navigate to the assignment you've been working on. In the upper
-   right corner of the assignment, you should see a **Submit Assignment**
+   right corner of the assignment, you should see a **Submit Assignment** (or
+   **Start Assignment**)
    button. You'll be directed to the bottom of the page, where you can provide a
    URL as your submission.
 
