@@ -24,32 +24,36 @@ will need to complete work on your local machine. The general process is:
 For this assignment, we'll do a quick walkthrough of these steps so you will know
 what to do in future assignments.
 
+You can follow along with the steps in the videos below, or continue reading to
+get a more detailed explanation of the process of working on lessons in Canvas.
+
+## WSL: Completing Assignments Code Along
+
+For Windows users, follow along with this video:
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/bTVWVQ4NRGk" frameborder="0" allowfullscreen></iframe>
+
+## MacOS: Completing Assignments Code Along
+
+For Mac users, follow along with this video:
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/wvNDPvkozMU" frameborder="0" allowfullscreen></iframe>
+
 ### A Quick Note on Organizing Work on Your Machine
 
 Through this course, you will be downloading many assignments, so it is
-important to take a moment now to think about how you'll organize this work on
-your computer. You are welcome to do what you like, but we recommend setting up
-a directory where you can keep all of your work for this course.
+important to keep your code organized. You are welcome to do what you like, but
+we recommend setting up a directory where you can keep all of your work for this
+course.
 
-- Go to your terminal and navigate to your home directory by typing `cd ~`
-- Create a `Development` folder by typing `mkdir Development` (if you're a mac
-  user, this folder already exists)
-- Navigate into this folder with `cd Development`
-- In here, create a `code` folder with `mkdir code`
-- Navigate into this folder with `cd code`
-
-You'll be going through multiple phases in this course, so it may also be
-helpful to go one step further and create folders for phases 0 through 5 within
-`code`.
-
-Having a specific place for your work will make it easier to find if you ever
-need to look back at an earlier project. It'll also keep the rest of your
-computer's folders clear of random code.
+You can follow along with the steps in
+[this lesson](https://github.com/learn-co-curriculum/phase-0-organizing-work-on-your-computer)
+to set up your directory structure.
 
 > **Note:** The process we'll go through in this lesson will create sub-folders
 > automatically. Whenever you are starting a new assignment, navigate back to
-> your main `code` folder (`cd ~/Development/code`) to ensure these sub-folders
-> don't get created _within each other_.
+> your main `prework` folder (`cd ~/Development/prework`) to ensure these
+> sub-folders don't get created _within each other_.
 
 ### Accessing GitHub and Forking
 
