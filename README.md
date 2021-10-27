@@ -73,7 +73,7 @@ you when you get a bit farther along in the curriculum.
 
 <figure>
   <img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" alt="fork link" height="25px">
-  <figcaption><sm>This is just a picture, the button is up at the top of the page</sm></figcaption>
+  <figcaption><sm>This is just a picture, the button is up at the top of the page.</sm></figcaption>
 </figure>
 
 Clicking the **Fork** button will do one of two things — it will either start
@@ -89,7 +89,7 @@ to edit the files in the repository and write your own code solution without
 interfering with the original copy.
 
 Go ahead and fork this assignment. The `README.md` file in the repository
-contains these instructions, so you can continue here or in GitHub.
+contains these instructions, so you can continue this lesson here or in GitHub.
 
 With a fork created, the next step is to download your new repository to your
 local machine.
@@ -140,7 +140,7 @@ $ cd phase-0-completing-assignments
 ```
 
 Now, if you've set up VS Code, type `code .` to open up a text editor window
-with access to all of the assignment's files. The instructions are now also
+with access to all of the assignment's files. These instructions are now also
 available on your local machine in `README.md`.
 
 ### Completing an Assignment
