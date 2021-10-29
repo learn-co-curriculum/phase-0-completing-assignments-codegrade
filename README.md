@@ -31,13 +31,13 @@ get a more detailed explanation of the process of working on lessons in Canvas.
 
 For Windows users, follow along with this video:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/bTVWVQ4NRGk" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/mFgvCZ7iCQc" frameborder="0" allowfullscreen></iframe>
 
 ## MacOS: Completing Assignments Code Along
 
 For Mac users, follow along with this video:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/wvNDPvkozMU" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/uzphQmL7a0c" frameborder="0" allowfullscreen></iframe>
 
 ### A Quick Note on Organizing Work on Your Machine
 
@@ -142,6 +142,16 @@ $ cd phase-0-completing-assignments
 Now, if you've set up VS Code, type `code .` to open up a text editor window
 with access to all of the assignment's files. These instructions are now also
 available on your local machine in `README.md`.
+
+> Note: the first time you open a directory in Visual Studio Code, you'll see a
+> message asking "Do you trust the authors of the files in this folders?" This
+> is a [security feature][workspace trust] of Visual Studio Code. It's safe to
+> choose "Yes", and we recommend selecting the "Trust the authors of all the
+> files in the parent folder" option to prevent this warning from coming up
+> every time you open a lesson. Just be sure to download your code from trusted
+> sources!
+
+[workspace trust]: https://code.visualstudio.com/docs/editor/workspace-trust
 
 ### Completing an Assignment
 
