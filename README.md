@@ -21,8 +21,8 @@ will need to complete work on your local machine. The general process is:
 - Complete the required work
 - Upload the work you've done to your personal copy of the assignment on GitHub
 
-For this assignment, we'll do a quick walkthrough of these steps so you will know
-what to do in future assignments.
+For this assignment, we'll do a quick walkthrough of these steps so you will
+know what to do in future assignments.
 
 You can follow along with the steps in the videos below, or continue reading to
 get a more detailed explanation of the process of working on lessons in Canvas.
@@ -130,10 +130,27 @@ copied SSH link from GitHub. It should look something like this:
 $ git clone git@github.com:<your-user-name>/phase-0-completing-assignments.git
 ```
 
-Press enter, and you should see a flurry of terminal activity. Once the terminal
-gives you control to type again, a new folder with the GitHub name of the
-assignment will be present. Change directory into this folder to access the
-assignment files.
+Press enter, and you should see a flurry of terminal activity.
+
+> **Troubleshooting**: If you are a Mac user and you see the following message:
+>
+> `xcrun: error: invalid active developer path`
+>
+> You need to install the Xcode Command Line Tools. Run the following command to
+> install them:
+>
+> ```console
+> $ xcode-select --install
+> ```
+>
+> And follow the prompts. Then try running the `git clone` command again. See
+> [this Stack Overflow post](https://stackoverflow.com/a/52522566) for more
+> details. Note that you may need to re-install `xcode-select` any time you
+> update your Mac OS version.
+
+Once the terminal gives you control to type again, a new folder with the GitHub
+name of the assignment will be present. Change directory into this folder to
+access the assignment files.
 
 ```console
 $ cd phase-0-completing-assignments
@@ -233,8 +250,8 @@ $ git push
 ```
 
 This command sends the changes you've made to GitHub. If you revisit your
-_personal_ copy of the assignment on GitHub, the commit you just created (with the
-message 'Done with assignment') will be the most recent commit on the
+_personal_ copy of the assignment on GitHub, the commit you just created (with
+the message 'Done with assignment') will be the most recent commit on the
 assignment.
 
 Each assignment will be slightly different and will include instructions on what
@@ -260,9 +277,8 @@ your GitHub repository.
 
 2. In Canvas, navigate to the assignment you've been working on. In the upper
    right corner of the assignment, you should see a **Submit Assignment** (or
-   **Start Assignment**)
-   button. You'll be directed to the bottom of the page, where you can provide a
-   URL as your submission.
+   **Start Assignment**) button. You'll be directed to the bottom of the page,
+   where you can provide a URL as your submission.
 
 3. Paste in your repository's GitHub URL and click **Submit**.
 
@@ -278,9 +294,8 @@ Let's quickly review the process for completing assignments:
 button in the upper right corner of the assignment on Canvas.
 
 **2.** Once forked to your personal account, start the **cloning** for your
-assignment. Do this by clicking the **Code** button in GitHub, choosing
-**SSH**, then clicking the **clipboard** icon to copy the assignment's GitHub
-info.
+assignment. Do this by clicking the **Code** button in GitHub, choosing **SSH**,
+then clicking the **clipboard** icon to copy the assignment's GitHub info.
 
 **3.** Go to your local environment's terminal and navigate to where you'd like
 to store your assignment locally.
@@ -302,7 +317,8 @@ $ git add .
 $ git commit -m 'Done with assignment'
 ```
 
-**9.** Push your work to your personal fork on GitHub with the `git push` command
+**9.** Push your work to your personal fork on GitHub with the `git push`
+command
 
 **10.** Go to your repository in GitHub and copy the URL. Note, this should be
 copied from the browser's address bar, and should start with
