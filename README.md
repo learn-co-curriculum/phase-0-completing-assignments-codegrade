@@ -185,7 +185,10 @@ This assignment
 
 > **Note:** If you did not receive a passing test, or if your terminal produced
 > some sort of error, walk through the steps in this lesson again and make sure
-> you've followed each one. If you're still receiving errors, we recommend going
+> you've followed each one. If you got a "command not found" error, go back to
+> the [Configuring the Flatiron Student Portal](https://github.com/learn-co-curriculum/phase-0-configuring-the-flatiron-student-portal)
+> lesson and go through the steps provided there to make sure the `learn-co` gem
+> was installed correctly. If you're still receiving errors, we recommend going
 > back through the local environment setup instructions again to ensure
 > everything is set up properly.
 
