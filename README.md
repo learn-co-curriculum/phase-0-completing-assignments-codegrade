@@ -207,9 +207,9 @@ marked **Incomplete** until all tests are passing.
 ### Your Work in GitHub
 
 Every time you run `learn test`, all the changes you've made locally will be
-stored on your GitHub fork of the repo. If you head back to your repo after
-running `learn test`, you should see a message that a new branch, `fis-wip`, has
-been created:
+automatically pushed to your GitHub fork of the repo. If you head back to your
+repo after running `learn test`, you should see a message that a new branch,
+`fis-wip`, has been created:
 
 ![pr_prompt](https://curriculum-content.s3.amazonaws.com/phase-0/configuring-the-student-portal/fis-wip.jpg)
 
