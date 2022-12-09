@@ -339,7 +339,7 @@ to your account.
 > will walk you through the manual set up, be sure to read and follow their
 > instructions carefully.
 
-![]()
+![Gif showing the CodeGrade interface, creating a submission, and connecting to GitHub](https://imgur.com/aXVrPtW.gif)
 
 Once your GitHub account is connected, whether automatically or manually, you
 should see a list of your repos in the CodeGrade window. Find the repo that
@@ -349,7 +349,7 @@ matches the assignment you're submitting, in this case
 When CodeGrade finishes connecting the repo, it should show you a success
 message with a link to view your submission. Click on that link.
 
-![]()
+![Gif showing how to connect a GitHub repo on CodeGrade](https://imgur.com/8hLcb3O.gif)
 
 On this new page, there are three different tabs: Code, Feedback Overview, and
 AutoTest.
@@ -364,7 +364,7 @@ can see the progress in the small box on the right side of the Setup section.
 When it's done, it will say "Done" and your score will update in the Automatic
 Tests section.
 
-![]()
+![Gif showing the AutoTest running and completing](https://imgur.com/G5pzKwr.gif)
 
 If you don't pass, don't fret, you can still fix it! You can click on the
 test(s) within the Automatic Tests section to see which ones failed. Then, you
@@ -378,7 +378,7 @@ back to CodeGrade through the button on Canvas. Instead of on "Create
 submission", click on the "Latest submission" button to get taken back to the
 AutoTest page.
 
-![]()
+![Gif showing how to navigate back to AutoTest via the Latest submission button](https://imgur.com/iDeIorX.gif)
 
 Whew, that was a lot. While it will take some time in the beginning, the more
 assignments you complete and submit, the easier the process should become. If
