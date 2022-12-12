@@ -34,13 +34,13 @@ lessons in Canvas.
 
 For Windows users, follow along with this video:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/wkM_3VZT2Nw" frameborder="0" allowfullscreen></iframe>
+TO DO: REPLACE VIDEO
 
 ## MacOS: Completing Assignments Code Along
 
 For Mac users, follow along with this video:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/otfhhI-5qtM" frameborder="0" allowfullscreen></iframe>
+TO DO: REPLACE VIDEO
 
 ### A Quick Note on Organizing Work on Your Machine
 
@@ -52,7 +52,7 @@ to set up a directory where you can keep all of your work for this course.
 
 > **Note:** The process we'll go through in this lesson will create sub-folders
 > automatically. Whenever you are starting a new assignment, navigate back to
-> your main `prework` folder (`cd ~/Development/code/prework`) before cloning
+> your main `se-prep` folder (`cd ~/Development/code/se-prep`) before cloning
 > the assignment to ensure these sub-folders don't get created _within each
 > other_.
 
@@ -60,7 +60,7 @@ to set up a directory where you can keep all of your work for this course.
 
 All the lessons in this course have a corresponding repository (repo) in GitHub.
 On this page in Canvas, you should see two icons in the **upper right** corner.
-The first says **Fork**, which will open the lesson's GitHub repo. The third is
+The first says **Fork**, which will open the lesson's GitHub repo. The second is
 a flag, which you can use to submit an _issue_ for the lesson (e.g., if you find
 a typo or other error).
 
@@ -72,11 +72,6 @@ that, and you should get a screen that looks something like this:
 
 In the **Owner** dropdown, select your GitHub username, then click the **Create
 fork** button.
-
-<figure>
-  <img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" alt="fork link" height="25px">
-  <figcaption><sm>This is just a picture, the button is up at the top of the page.</sm></figcaption>
-</figure>
 
 Forking is a process which creates an exact copy of a collection of code and
 files. Once you've created a fork on your own GitHub account, you will be able
@@ -104,7 +99,7 @@ assignment (e.g. `cd ~/Development/code`). Type `git clone` and a space, then
 paste in the copied SSH link from GitHub. It should look something like this:
 
 ```console
-$ git clone git@github.com:<your-user-name>/phase-0-completing-assignments.git
+$ git clone git@github.com:<your-user-name>/phase-0-completing-assignments-codegrade.git
 ```
 
 Press enter, and you should see a flurry of terminal activity.
@@ -130,7 +125,7 @@ name of the assignment will have been created. Change directory into this folder
 to access the assignment files.
 
 ```console
-$ cd phase-0-completing-assignments
+$ cd phase-0-completing-assignments-codegrade
 ```
 
 Now type `code .` to open up a text editor window with access to all of the
@@ -152,15 +147,16 @@ machine in `README.md`.
 Most assignments will have tests that check your work and provide immediate
 feedback in the terminal. We'll walk through some examples in upcoming lessons.
 
-This assignment has a single test: check to see if you've correctly cloned this
-assignment to your local machine. If you've followed the steps above, you've
-completed everything you need to do to pass the test; all that is left to do is
-run it.
+This assignment has two tests. The first checks to see if you've correctly
+cloned this assignment to your local machine. If you've followed the steps
+above, you've completed everything you need to do to pass the first test. Now,
+we need to run it and find out what our second test is.
 
 First, run `npm install` to install the tools necessary to run the test. You
-should again see a flurry of text as dependencies are installed. Once your
-terminal finished with that command, run `npm test`. You should see the results
-of your test. By cloning this assignment down, you've already passed one test!
+should again see a flurry of text as dependencies are installed. Once the
+terminal has finished with that command, run `npm test`. You should see the
+results of your tests. By cloning this assignment down, you've already passed
+one test!
 
 ```console
 This assignment
@@ -180,8 +176,8 @@ This assignment
 > errors, we recommend going back through all local environment setup
 > instructions again to ensure everything is set up properly.
 
-However, there is still one test not passing. Terminal gave us a detailed error
-saying why we did not pass the test:
+However, there is still one test not passing. The terminal gave us a detailed
+error saying why we did not pass the test:
 
 ```console
 1) This assignment
@@ -193,9 +189,9 @@ We can use this error to figure out what we need to do to pass it. In this case,
 we just need to create a file called `myfile.md` inside the assignment
 directory. Let's create it with the CLI commands we just learned.
 
-In terminal, make sure you're in the root of the assignment directory
-(`phase-0-completing-assignments`). If you're not already, `cd` into it. Then
-use the `touch` command to create `myfile.md`.
+In the terminal, make sure you're in the root of the assignment directory
+(`phase-0-completing-assignments-codegrade`). If you're not already, `cd` into
+it. Then use the `touch` command to create `myfile.md`.
 
 To make sure it was created successfully in the correct area, use the `ls`
 command. The output should look like:
@@ -205,13 +201,16 @@ CONTRIBUTING.md         README.md               node_modules            package.
 LICENSE.md              myfile.md               package-lock.json       test
 ```
 
-Now when you run `npm test` again, both tests should now be passing!
+When you run `npm test` again, both tests should now be passing!
 
 This is the general workflow you will follow when working on assignments with
-tests. Install the tools needed for the test, then run the test initially to see
-what tests you need to pass. Work on the assignment with those tests in mind. As
-you work, you can run `npm test` as many times as you'd like to test your work.
-Once all your tests are passing, it's time submit your assignment - or is it?
+tests:
+
+1. Install the tools needed for the test by running `npm install` (or `npm i`)
+1. Run the test initially to see what tests you need to pass.
+1. Work on the assignment with those tests in mind.
+1. As you work, run `npm test` as many times as you'd like to test your code.
+1. Once all your tests are passing, it's time submit your assignment - or is it?
 
 ### Pushing your Changes to GitHub
 
@@ -233,7 +232,7 @@ the surface basics for now that will allow you to turn in your assignments.
 
 These commands should be run within the directory with changes to push. For
 example with this assignment, you should be running the following commands
-within the `phase-0-completing-assignments` directory.
+within the `phase-0-completing-assignments-codegrade` directory.
 
 #### Track changes with `git add`
 
@@ -241,7 +240,7 @@ This command lets us tell git what changes and files we want to sync within a
 repo. You can specify certain files to track, or you can track all files at once
 that have changes to sync.
 
-To track specific files, you just need to add the file name as arguments. For
+To track specific files, you just need to add the file names as arguments. For
 example:
 
 ```bash
@@ -271,7 +270,7 @@ what changes are actually in the commit. These messages should be one line and
 short. The `-m` flag says we want to add one and should be followed by the
 message in quotes.
 
-Let's commit our tracked change. In terminal, run:
+Let's commit our tracked change. In the terminal, run:
 
 ```bash
 git commit -m "created myfile.md"
@@ -290,13 +289,17 @@ git push <remote> <branch>
 We will learn what a **remote** and **branch** are in greater detail later on.
 
 For now, consider the remote as the repository that is on GitHub - in this case,
-the forked version of the assignment you created earlier. It would be tedious if
-we had to copy and paste the entire repository link every time we want to push a
-change, however. Instead, these remotes use aliases that point to the URL. When
-cloning a repository down to your machine, an alias gets automatically created
-for you called `origin`, which is the remote we will push to. You can see this
-yourself by running the command `git remote -v`. This will list the remotes your
-repository has.
+the copy of the assignment that you forked into your GitHub account earlier.
+
+It would be tedious if we had to copy and paste the entire repository link every
+time we want to push a change, however. Instead, these remotes use aliases that
+point to the URL. When cloning a repository down to your machine, an alias gets
+automatically created for you called `origin`, which is the remote we will push
+to.
+
+You can see this yourself by running the command `git remote -v`. This will list
+the remotes your repository has. This is also a good way to verify that you are
+pushing your changes to **your fork** of the assignment
 
 Then consider a branch as the version of the code you want to push the changes
 to. In most cases, this branch will be called `main` or `master` for older
@@ -344,7 +347,7 @@ to your account.
 Once your GitHub account is connected, whether automatically or manually, you
 should see a list of your repos in the CodeGrade window. Find the repo that
 matches the assignment you're submitting, in this case
-`phase-0-completing-assignments`, and click the blue "Connect" button.
+`phase-0-completing-assignments-codegrade`, and click the blue "Connect" button.
 
 When CodeGrade finishes connecting the repo, it should show you a success
 message with a link to view your submission. Click on that link.
@@ -394,8 +397,8 @@ that require slightly different submission steps:
 
 - **Code-alongs:** These also require code, but will guide you through what
   needs to be written. There are no tests to pass, but you will still need to go
-  through forking, cloning, and pushing your changes up for your own
-  safekeeping.
+  through forking, cloning, pushing your changes up, and submitting the repo to
+  CodeGrade to be marked as complete.
 - **Portfolio Projects:** For these assignments, you'll be building fully
   functional applications. Some guidelines and requirements will be provided,
   but it will be up to you to design and create your own app. These will
@@ -428,14 +431,14 @@ has been accepted.
 
 ## Conclusion
 
-Congratulations! You've completed your first assignment using the `learn-co`
-gem! You now know how to work on and submit assignments going forward:
+Congratulations, you've completed your first assignment and submitted it to
+CodeGrade! You now know how to work on and submit assignments going forward:
 
 - Click the **Fork** button on the Canvas assignment
 - Once the assignment is forked, clone it down to your local machine
 - Complete any required work, then run the `git add`, `git commit`, and
   `git push` commands
-- Submit your assignment through CodeGrade by connecting your GitHub account,
+- Submit your assignment through CodeGrade by selecting your GitHub account,
   then connecting the appropriate repo
 
 Equipped with this knowledge, you are now ready to tackle greater challenges!
