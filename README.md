@@ -228,8 +228,8 @@ The process requires three terminal commands:
 1. `git commit`
 1. `git push`
 
-We will learn about these commands in far more detail later on. We'll just cover
-the surface basics for now that will allow you to turn in your assignments.
+We will learn about these commands in far more detail later on. For now, we'll
+just cover the surface basics that will allow you to turn in your assignments.
 
 These commands should be run within the directory with changes to push. For
 example with this assignment, you should be running the following commands
