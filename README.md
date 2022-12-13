@@ -20,7 +20,7 @@ submit your assignment on a platform called CodeGrade through Canvas.
 The general process is:
 
 - Click the blue "Fork" button in Canvas
-- Create a personal copy (a 'fork') of the assignment in GitHub
+- Create a personal copy (a 'fork') of the assignment into your GitHub account
 - Download your personal copy (referred to as 'cloning') to your computer
 - Complete the required work
 - Submit your completed work in Canvas through the CodeGrade window
@@ -95,8 +95,9 @@ From here, click the copy button.
 ![clone-repo](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/clone-repo.gif)
 
 Now, open your terminal and navigate to where you'd like to download the
-assignment (e.g. `cd ~/Development/code`). Type `git clone` and a space, then
-paste in the copied SSH link from GitHub. It should look something like this:
+assignment (e.g. `cd ~/Development/code/se-prep`). Type `git clone` and a space,
+then paste in the copied SSH link from GitHub. It should look something like
+this:
 
 ```console
 $ git clone git@github.com:<your-user-name>/phase-0-completing-assignments-codegrade.git
@@ -305,13 +306,13 @@ Then consider a branch as the version of the code you want to push the changes
 to. In most cases, this branch will be called `main` or `master` for older
 repositories. You can check what branch your repository uses by using the
 command `git branch`, which will list all the branches your repository has. For
-this assignment, it should be `master`.
+this assignment, it should be `main`.
 
 Putting that all together, we can now completely fill out the `git push` command
 and push our changes up:
 
 ```bash
-git push origin master
+git push origin main
 ```
 
 Now, finally, when you load your forked version of the assignment on GitHub, you
