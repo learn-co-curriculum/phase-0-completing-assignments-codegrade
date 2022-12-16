@@ -91,12 +91,22 @@ repository to your local machine.
 
 ### Cloning to Your Local Machine
 
-To download the repository for this lesson, make sure you're in your personal
-fork on GitHub, then click the **Code** button. A pop-up will appear which shows
-several options for cloning: **HTTPS**, **SSH**, and **GitHub CLI**. **Before
-doing anything else**, be sure to switch to **SSH**. With **SSH** selected, you
-should see what looks sort of like an email in the box below, starting with
-`git@github.com:`. You should see your GitHub name after the `:`.
+To download the repository for this lesson, first make sure you're in your
+personal fork on GitHub. You can check this by looking in the top left of the
+GitHub repository, where it shows the name.
+
+![Screenshot showing example of forked repo](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/forked-repo.png)
+
+If you see your GitHub username before the name of the repo,
+phase-0-completing-assignments-codegrade, as well as a subtitle saying "forked
+from ...", then you are in the right place.
+
+Once you're in your forked version of the repo, click the **Code** button. A
+pop-up will appear which shows several options for cloning: **HTTPS**, **SSH**,
+and **GitHub CLI**. **Before doing anything else**, be sure to switch to
+**SSH**. With **SSH** selected, you should see what looks sort of like an email
+in the box below, starting with `git@github.com:`. You should see your GitHub
+name after the `:`.
 
 From here, click the copy button.
 
@@ -260,11 +270,16 @@ tests:
 ### Pushing your Changes to GitHub
 
 If you go to your **forked** version of the assignment on GitHub, you'll see
-that the `myfile.md` file you created is not there. This is because you only
-made the change on your _local clone_. Changes that you make on a locally cloned
-repository are not automatically synced to the repo up on GitHub. You have to
-manually sync the changes. This is a good thing, it gives you more control over
-what changes get "pushed" up to the GitHub repo and when.
+that the `myfile.md` file you created is not there. Notice in the screenshot
+below, for example, `myfile.md` exists in the local VS Code editor, but not
+anywhere in the forked GitHub repo.
+
+![Screenshot showing myfile.md in VS Code, but not in GitHub](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/myfile.png)
+
+This is because you only made the change on your _local clone_. Changes that you
+make on a locally cloned repository are not automatically synced to the repo up
+on GitHub. You have to manually sync the changes. This is a good thing, it gives
+you more control over what changes get "pushed" up to the GitHub repo and when.
 
 The process requires three terminal commands:
 
