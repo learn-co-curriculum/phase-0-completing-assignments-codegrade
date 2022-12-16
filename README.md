@@ -72,11 +72,11 @@ typo or other error).
 To fork an assignment, click the **Fork** button to open its GitHub repo. In the
 top right corner of the repo, you should see another button that says **Fork**.
 
-![Screenshot of 'Fork' button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
+![Screenshot point out 'Fork' button](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-button.png)
 
 Click on that, and you should get a screen that looks something like this:
 
-![Screenshot of the 'Create a new fork' form](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-form.png)
+![Screenshot of the 'Create a new fork' form](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-page.png)
 
 In the **Owner** dropdown, select your GitHub username, then click the **Create
 fork** button.
