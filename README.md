@@ -510,6 +510,6 @@ CodeGrade! You now know how to work on and submit assignments going forward:
 - Complete any required work, then run the `git add`, `git commit`, and
   `git push` commands in the terminal.
 - Submit your assignment through CodeGrade by selecting your GitHub account,
-  then connecting the appropriate repo
+  then connecting the appropriate repo.
 
 Equipped with this knowledge, you are now ready to tackle greater challenges!
