@@ -169,7 +169,7 @@ feedback in the terminal. We'll walk through some examples in upcoming lessons.
 This assignment has two tests. The first checks to see if you've correctly
 cloned this assignment to your local machine. If you've followed the steps
 above, you've completed everything you need to do to pass the first test. Now,
-we need to run it and find out what our second test is.
+we need to run the tests and find out what the second one is.
 
 First, run `npm install` in the terminal to install the tools necessary to run
 the test. You should again see a flurry of text as dependencies are installed.
