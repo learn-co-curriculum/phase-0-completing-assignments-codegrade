@@ -20,11 +20,11 @@ submit your assignment on a platform called CodeGrade through Canvas.
 The general process is:
 
 - Click the GitHub logo button (the 'OctoCat') in Canvas, we will show you
-  exactly which button this is soon
-- Create a personal copy (a 'fork') of the assignment into your GitHub account
-- Download your personal copy (referred to as 'cloning') to your computer
-- Complete the required work
-- Submit your completed work in Canvas through the CodeGrade window
+  exactly which button this is soon.
+- Create a personal copy (a 'fork') of the assignment into your GitHub account.
+- Download your personal copy to your computer (referred to as 'cloning').
+- Complete the required work.
+- Submit your completed work in Canvas through the CodeGrade window.
 
 In this assignment, you'll learn the workflow that you will be using to complete
 your assignments. You can follow along with the steps in the videos below, or
@@ -65,12 +65,12 @@ The first is the GitHub logo, also known as OctoCat.
 
 ![Screenshot pointing to OctoCat icon](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/octocat-icon.png)
 
-Clicking this icon will open the lesson's GitHub repo. The second icon is a
-flag, which you can use to submit an _issue_ for the lesson (e.g., if you find a
-typo or other error).
+Clicking the OctoCat icon will open the lesson's GitHub repo. The second icon is
+a flag, which you can use to submit an _issue_ for the lesson (e.g., if you find
+a typo or other error).
 
 To fork an assignment, click the **Fork** button to open its GitHub repo. In the
-top right corner of the repo, you should see another button that says **Fork**.
+top right corner of the repo, you should see a button that says **Fork**.
 
 ![Screenshot point out 'Fork' button](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-button.png)
 
@@ -173,10 +173,12 @@ we need to run it and find out what our second test is.
 
 First, run `npm install` in the terminal to install the tools necessary to run
 the test. You should again see a flurry of text as dependencies are installed.
-You may get a warnings or a message from the terminal saying there are
-vulnerabilities, **these are okay to ignore** - they are normal! You **should
-not** run the audit command the terminal provides you with as it will change the
-versions of the node dependencies for a lesson, which we do _not_ want to do.
+
+> **Note**: You may get a warnings or a message from the terminal saying there
+> are vulnerabilities, **these are okay to ignore** - they are normal! You
+> **should not** run the audit command the terminal provides you with as it will
+> change the versions of the node dependencies for a lesson, which we do _not_
+> want to do.
 
 Once the installations are complete, run `npm test` in the terminal. You should
 see the results of your tests. By cloning this assignment down, you've already
@@ -259,8 +261,10 @@ When you run `npm test` in the terminal again, both tests should now be passing!
 This is the general workflow you will follow when working on assignments with
 tests:
 
+1. Fork the assignment repo to your GitHub account, then clone it down to your
+   machine.
 1. Install the tools needed for the test by running `npm install` (or `npm i`)
-   in the terminal
+   in the terminal.
 1. Run the test initially to see what tests you need to pass.
 1. Work on the assignment with those tests in mind.
 1. As you work, run `npm test` in the terminal as many times as you'd like to
@@ -500,6 +504,9 @@ CodeGrade! You now know how to work on and submit assignments going forward:
 
 - Click the **Fork** button on the Canvas assignment
 - Once the assignment is forked, clone it down to your local machine
+- Run `npm install` to download the tools required for the assignment
+- Run `npm test` to see what tests you have to pass. Run the command as many
+  times as you like to check your work as you go.
 - Complete any required work, then run the `git add`, `git commit`, and
   `git push` commands in the terminal
 - Submit your assignment through CodeGrade by selecting your GitHub account,
