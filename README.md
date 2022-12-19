@@ -502,14 +502,14 @@ has been accepted.
 Congratulations, you've completed your first assignment and submitted it to
 CodeGrade! You now know how to work on and submit assignments going forward:
 
-- Click the **Fork** button on the Canvas assignment
-- Once the assignment is forked, clone it down to your local machine
-- Run `npm install` to download the tools required for the assignment
+- Click the **Fork** button on the Canvas assignment.
+- Once the assignment is forked, clone it down to your local machine.
+- Run `npm install` to download the tools required for the assignment.
 - Run `npm test` to see what tests you have to pass. Run the command as many
   times as you like to check your work as you go.
 - Complete any required work, then run the `git add`, `git commit`, and
-  `git push` commands in the terminal
+  `git push` commands in the terminal.
 - Submit your assignment through CodeGrade by selecting your GitHub account,
-  then connecting the appropriate repo
+  then connecting the appropriate repo.
 
 Equipped with this knowledge, you are now ready to tackle greater challenges!
