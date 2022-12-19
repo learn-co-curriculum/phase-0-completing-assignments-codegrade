@@ -19,11 +19,12 @@ submit your assignment on a platform called CodeGrade through Canvas.
 
 The general process is:
 
-- Click the blue "Fork" button in Canvas
-- Create a personal copy (a 'fork') of the assignment into your GitHub account
-- Download your personal copy (referred to as 'cloning') to your computer
-- Complete the required work
-- Submit your completed work in Canvas through the CodeGrade window
+- Click the GitHub logo button (the 'OctoCat') in Canvas, we will show you
+  exactly which button this is soon.
+- Create a personal copy (a 'fork') of the assignment into your GitHub account.
+- Download your personal copy to your computer (referred to as 'cloning').
+- Complete the required work.
+- Submit your completed work in Canvas through the CodeGrade window.
 
 In this assignment, you'll learn the workflow that you will be using to complete
 your assignments. You can follow along with the steps in the videos below, or
@@ -60,15 +61,22 @@ to set up a directory where you can keep all of your work for this course.
 
 All the lessons in this course have a corresponding repository (repo) in GitHub.
 On this page in Canvas, you should see two icons in the **upper right** corner.
-The first says **Fork**, which will open the lesson's GitHub repo. The second is
+The first is the GitHub logo, also known as OctoCat.
+
+![Screenshot pointing to OctoCat icon](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/octocat-icon.png)
+
+Clicking the OctoCat icon will open the lesson's GitHub repo. The second icon is
 a flag, which you can use to submit an _issue_ for the lesson (e.g., if you find
 a typo or other error).
 
 To fork an assignment, click the **Fork** button to open its GitHub repo. In the
-top right corner, you should see another button that says **Fork**. Click on
-that, and you should get a screen that looks something like this:
+top right corner of the repo, you should see a button that says **Fork**.
 
-![Screenshot of the 'Create a new fork' form](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-form.png)
+![Screenshot point out 'Fork' button](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-button.png)
+
+Click on that, and you should get a screen that looks something like this:
+
+![Screenshot of the 'Create a new fork' form](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-page.png)
 
 In the **Owner** dropdown, select your GitHub username, then click the **Create
 fork** button.
@@ -83,12 +91,22 @@ repository to your local machine.
 
 ### Cloning to Your Local Machine
 
-To download the repository for this lesson, make sure you're in your personal
-fork on GitHub, then click the **Code** button. A pop-up will appear which shows
-several options for cloning: **HTTPS**, **SSH**, and **GitHub CLI**. **Before
-doing anything else**, be sure to switch to **SSH**. With **SSH** selected, you
-should see what looks sort of like an email in the box below, starting with
-`git@github.com:`. You should see your GitHub name after the `:`.
+To download the repository for this lesson, first make sure you're in your
+personal fork on GitHub. You can check this by looking in the top left of the
+GitHub repository, where it shows the name.
+
+![Screenshot showing example of forked repo](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/forked-repo.png)
+
+If you see your GitHub username before the name of the repo,
+phase-0-completing-assignments-codegrade, as well as a subtitle saying "forked
+from ...", then you are in the right place.
+
+Once you're in your forked version of the repo, click the **Code** button. A
+pop-up will appear which shows several options for cloning: **HTTPS**, **SSH**,
+and **GitHub CLI**. **Before doing anything else**, be sure to switch to
+**SSH**. With **SSH** selected, you should see what looks sort of like an email
+in the box below, starting with `git@github.com:`. You should see your GitHub
+name after the `:`.
 
 From here, click the copy button.
 
@@ -153,32 +171,41 @@ cloned this assignment to your local machine. If you've followed the steps
 above, you've completed everything you need to do to pass the first test. Now,
 we need to run it and find out what our second test is.
 
-First, run `npm install` to install the tools necessary to run the test. You
-should again see a flurry of text as dependencies are installed. Once the
-terminal has finished with that command, run `npm test`. You should see the
-results of your tests. By cloning this assignment down, you've already passed
-one test!
+First, run `npm install` in the terminal to install the tools necessary to run
+the test. You should again see a flurry of text as dependencies are installed.
+
+> **Note**: You may get a warnings or a message from the terminal saying there
+> are vulnerabilities, **these are okay to ignore** - they are normal! You
+> **should not** run the audit command the terminal provides you with as it will
+> change the versions of the node dependencies for a lesson, which we do _not_
+> want to do.
+
+Once the installations are complete, run `npm test` in the terminal. You should
+see the results of your tests. By cloning this assignment down, you've already
+passed one test!
 
 ```console
 This assignment
   ✓ has been correctly cloned to your local environment
   1) has a file named myfile.md
 
+1) This assignment
+      has a file named myfile.md:
+    AssertionError: No file named 'myfile.md' found. Create one in the root of the assignment's directory: value: expected './myfile.md' to exist
 
 1 passing (5ms)
 1 failing
 ```
 
-> **Note:** If you did not receive a passing test, or if your terminal produced
-> some sort of error, walk through the steps in this lesson again and make sure
-> you've followed each one. If you got a "command not found" error, go back to
-> the Node.js installation lesson for your OS and go through the steps provided
-> there to make sure Node was installed correctly. If you're still receiving
-> errors, we recommend going back through all local environment setup
-> instructions again to ensure everything is set up properly.
+> **Note:** If you got a "command not found" error, or a different error aside
+> from the AssertionError shown above, go back to the Node.js installation
+> lesson for your OS. Go through the steps provided there to make sure Node was
+> installed correctly. If you're still receiving different errors, we recommend
+> going back through all local environment setup instructions again to ensure
+> everything is set up properly.
 
-However, there is still one test not passing. The terminal gave us a detailed
-error saying why we did not pass the test:
+Although you passed one test, there is still one test not passing. The terminal
+gave us a detailed "AssertionError" saying why we did not pass the test:
 
 ```console
 1) This assignment
@@ -191,36 +218,72 @@ we just need to create a file called `myfile.md` inside the assignment
 directory. Let's create it with the CLI commands we just learned.
 
 In the terminal, make sure you're in the root of the assignment directory
-(`phase-0-completing-assignments-codegrade`). If you're not already, `cd` into
-it. Then use the `touch` command to create `myfile.md`.
+(`phase-0-completing-assignments-codegrade`). You can check this with `pwd`. If
+you're in the correct directory, the output should look like:
+
+```console
+$ pwd
+/Users/<your-user-name>/Development/code/se-prep/phase-0-completing-assignments-codegrade
+```
+
+If you're not already in the root, `cd` into it.
+
+```console
+$ cd phase-0-completing-assignments-codegrade
+```
+
+Then use the `touch` command to create `myfile.md`.
+
+```console
+$ touch myfile.md
+```
 
 To make sure it was created successfully in the correct area, use the `ls`
 command. The output should look like:
 
 ```console
+$ ls
 CONTRIBUTING.md         README.md               node_modules            package.json
 LICENSE.md              myfile.md               package-lock.json       test
 ```
 
-When you run `npm test` again, both tests should now be passing!
+When you run `npm test` in the terminal again, both tests should now be passing!
+
+```console
+  This assignment
+    ✓ has been correctly cloned to your local environment
+    ✓ has a file named myfile.md
+
+
+  2 passing (4ms)
+```
 
 This is the general workflow you will follow when working on assignments with
 tests:
 
+1. Fork the assignment repo to your GitHub account, then clone it down to your
+   machine.
 1. Install the tools needed for the test by running `npm install` (or `npm i`)
+   in the terminal.
 1. Run the test initially to see what tests you need to pass.
 1. Work on the assignment with those tests in mind.
-1. As you work, run `npm test` as many times as you'd like to test your code.
+1. As you work, run `npm test` in the terminal as many times as you'd like to
+   test your code.
 1. Once all your tests are passing, it's time submit your assignment - or is it?
 
 ### Pushing your Changes to GitHub
 
 If you go to your **forked** version of the assignment on GitHub, you'll see
-that the `myfile.md` file you created is not there. This is because you only
-made the change on your _local clone_. Changes that you make on a locally cloned
-repository are not automatically synced to the repo up on GitHub. You have to
-manually sync the changes. This is a good thing, it gives you more control over
-what changes get "pushed" up to the GitHub repo and when.
+that the `myfile.md` file you created is not there. Notice in the screenshot
+below, for example, `myfile.md` exists in the local VS Code editor, but not
+anywhere in the forked GitHub repo.
+
+![Screenshot showing myfile.md in VS Code, but not in GitHub](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/myfile.png)
+
+This is because you only made the change on your _local clone_. Changes that you
+make on a locally cloned repository are not automatically synced to the repo up
+on GitHub. You have to manually sync the changes. This is a good thing, it gives
+you more control over what changes get "pushed" up to the GitHub repo and when.
 
 The process requires three terminal commands:
 
@@ -231,9 +294,9 @@ The process requires three terminal commands:
 We will learn about these commands in far more detail later on. For now, we'll
 just cover the surface basics that will allow you to turn in your assignments.
 
-These commands should be run within the directory with changes to push. For
-example with this assignment, you should be running the following commands
-within the `phase-0-completing-assignments-codegrade` directory.
+These commands should be run in the terminal within the directory with changes
+to push. For example with this assignment, you should be running the following
+commands within the `phase-0-completing-assignments-codegrade` directory.
 
 #### Track changes with `git add`
 
@@ -298,9 +361,10 @@ point to the URL. When cloning a repository down to your machine, an alias gets
 automatically created for you called `origin`, which is the remote we will push
 to.
 
-You can see this yourself by running the command `git remote -v`. This will list
-the remotes your repository has. This is also a good way to verify that you are
-pushing your changes to **your fork** of the assignment
+You can see this yourself by running the command `git remote -v` in the
+terminal. This will list the remotes your repository has. This is also a good
+way to verify that you are pushing your changes to **your fork** of the
+assignment
 
 Then consider a branch as the version of the code you want to push the changes
 to. In most cases, this branch will be called `main` or `master` for older
@@ -326,7 +390,7 @@ automatically grade your work.
 
 To submit your work for grading, head back to the assignment on Canvas and
 scroll down to the bottom of the page. There, you should see a button that says
-"Load \<Assignment Name> in a new window". For this lesson, it should look like:
+"Load Complete Your First Software Engineering Assignment in a new window".
 
 ![Load Complete Your First Software Engineering Assignment in a new window button](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/open-codegrade-btn.png)
 
@@ -336,14 +400,14 @@ up. As you haven't submitted an assignment for this lab yet, click on the
 button. As long as you're logged onto GitHub, this step should connect CodeGrade
 to your account.
 
-> If you were not logged in and the connection is unsuccessful where you don't
-> see a list of your repos, log in and try again. If you were logged in and it
-> still did not work, try again, but instead of clicking the "GitHub" button,
-> click the "Or manually connect your Git repository" link underneath. CodeGrade
-> will walk you through the manual set up, be sure to read and follow their
-> instructions carefully.
-
 ![Gif showing the CodeGrade interface, creating a submission, and connecting to GitHub](https://imgur.com/aXVrPtW.gif)
+
+> If you were not logged onto GitHub and the connection is unsuccessful where
+> you don't see a list of your repos, log into GitHub and try again. If you were
+> logged in and it still did not work, try again, but instead of clicking the
+> "GitHub" button, click the "Or manually connect your Git repository" link
+> underneath. CodeGrade will walk you through the manual set up, be sure to read
+> and follow their instructions carefully.
 
 Once your GitHub account is connected, whether automatically or manually, you
 should see a list of your repos in the CodeGrade window. Find the repo that
@@ -383,6 +447,9 @@ submission", click on the "Latest submission" button to get taken back to the
 AutoTest page.
 
 ![Gif showing how to navigate back to AutoTest via the Latest submission button](https://imgur.com/iDeIorX.gif)
+
+Once your tests are all passing in CodeGrade, you are good to go. You can close
+the CodeGrade window and move on to the next lesson.
 
 Whew, that was a lot. While it will take some time in the beginning, the more
 assignments you complete and submit, the easier the process should become. If
@@ -437,8 +504,11 @@ CodeGrade! You now know how to work on and submit assignments going forward:
 
 - Click the **Fork** button on the Canvas assignment
 - Once the assignment is forked, clone it down to your local machine
+- Run `npm install` to download the tools required for the assignment
+- Run `npm test` to see what tests you have to pass. Run the command as many
+  times as you like to check your work as you go.
 - Complete any required work, then run the `git add`, `git commit`, and
-  `git push` commands
+  `git push` commands in the terminal
 - Submit your assignment through CodeGrade by selecting your GitHub account,
   then connecting the appropriate repo
 
