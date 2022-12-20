@@ -27,19 +27,13 @@ The general process is:
 - Submit your completed work in Canvas through the CodeGrade window.
 
 In this assignment, you'll learn the workflow that you will be using to complete
-your assignments. You can follow along with the steps in the videos below, or
+your assignments. You can follow along with the steps in the video below, or
 continue reading to get a more detailed explanation of the process of working on
 lessons in Canvas.
 
-## WSL: Completing Assignments Code Along
+## Completing Assignments Code Along
 
-For Windows users, follow along with this video:
-
-TO DO: REPLACE VIDEO
-
-## MacOS: Completing Assignments Code Along
-
-For Mac users, follow along with this video:
+Follow along with this video:
 
 TO DO: REPLACE VIDEO
 
