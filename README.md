@@ -31,12 +31,6 @@ your assignments. You can follow along with the steps in the video below, or
 continue reading to get a more detailed explanation of the process of working on
 lessons in Canvas.
 
-## Completing Assignments Code Along
-
-Follow along with this video:
-
-TO DO: REPLACE VIDEO
-
 ### A Quick Note on Organizing Work on Your Machine
 
 Throughout this course, you will be downloading many assignments, so it is
