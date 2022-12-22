@@ -15,7 +15,7 @@ your first assignment!
 
 All assignments are hosted on GitHub. In order to work on them, however, you
 will need to complete work on your local machine. Once you're done, you will
-submit your assignment on a platform called CodeGrade through Canvas.
+submit your assignment to Canvas using a platform called CodeGrade.
 
 The general process is:
 
@@ -141,9 +141,9 @@ to access the assignment files.
 $ cd phase-0-completing-assignments-codegrade
 ```
 
-Now type `code .` to open up a text editor window with access to all of the
-assignment's files. These instructions are now also available on your local
-machine in `README.md`.
+Now type `code .` (assuming you're using Visual Studio Code as your text editor)
+to open up a text editor window with access to all of the assignment's files.
+These instructions are now also available on your local machine in `README.md`.
 
 > Note: the first time you open a directory in Visual Studio Code, you'll see a
 > message asking "Do you trust the authors of the files in this folders?" This
@@ -255,15 +255,15 @@ When you run `npm test` in the terminal again, both tests should now be passing!
 This is the general workflow you will follow when working on assignments with
 tests:
 
-1. Fork the assignment repo to your GitHub account, then clone it down to your
-   machine.
-1. Install the tools needed for the test by running `npm install` (or `npm i`)
+1. **Fork** the assignment repo to your GitHub account, then **clone** it down
+   to your machine.
+2. Install the tools needed for the test by running `npm install` (or `npm i`)
    in the terminal.
-1. Run the test initially to see what tests you need to pass.
-1. Work on the assignment with those tests in mind.
-1. As you work, run `npm test` in the terminal as many times as you'd like to
+3. Run the test initially to see what tests you need to pass.
+4. Work on the assignment with those tests in mind.
+5. As you work, run `npm test` in the terminal as many times as you'd like to
    test your code.
-1. Once all your tests are passing, it's time submit your assignment - or is it?
+6. Once all your tests are passing, it's time to submit your assignment - or is it?
 
 ### Pushing your Changes to GitHub
 
@@ -276,7 +276,7 @@ anywhere in the forked GitHub repo.
 
 This is because you only made the change on your _local clone_. Changes that you
 make on a locally cloned repository are not automatically synced to the repo up
-on GitHub. You have to manually sync the changes. This is a good thing, it gives
+on GitHub. You have to manually sync the changes. This is a good thing; it gives
 you more control over what changes get "pushed" up to the GitHub repo and when.
 
 The process requires three terminal commands:
