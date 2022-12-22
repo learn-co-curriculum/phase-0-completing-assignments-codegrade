@@ -390,10 +390,11 @@ to your account.
 
 ![Gif showing the CodeGrade interface, creating a submission, and connecting to GitHub](https://imgur.com/aXVrPtW.gif)
 
-> If you were not logged onto GitHub and the connection is unsuccessful where
-> you don't see a list of your repos, log into GitHub and try again. If you were
-> logged in and it still did not work, try again, but instead of clicking the
-> "GitHub" button, click the "Or manually connect your Git repository" link
+> If you were not logged onto GitHub, it should open a window for you to do so. 
+> Log in, and you should see the list of your repos. If it does not open a login 
+> window for you, log in on another window and start again from the Canvas page.
+> If you were logged in and it still did not work, try again, but instead of clicking 
+> the "GitHub" button, click the "Or manually connect your Git repository" link
 > underneath. CodeGrade will walk you through the manual set up, be sure to read
 > and follow their instructions carefully.
 
