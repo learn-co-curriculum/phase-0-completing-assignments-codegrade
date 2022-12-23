@@ -31,6 +31,10 @@ your assignments. You can follow along with the steps in the video below, or
 continue reading to get a more detailed explanation of the process of working on
 lessons in Canvas.
 
+## Completing Assignments Walkthrough Video
+
+<iframe width="640" height="480" src="https://youtu.be/EqIGup3zb8A" frameborder="0" allowfullscreen></iframe>
+
 ### A Quick Note on Organizing Work on Your Machine
 
 Throughout this course, you will be downloading many assignments, so it is
