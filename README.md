@@ -283,8 +283,14 @@ The process requires three terminal commands:
 1. `git commit`
 1. `git push`
 
-We will learn about these commands in far more detail later on. For now, we'll
-just cover the surface basics that will allow you to turn in your assignments.
+We will learn about these commands in far more detail in two lessons near the
+end of the SE Prep course: [Git Basics][basics] and [Pushing Code with
+Git][pushing-with-git]. For now, we'll just cover the surface basics that will
+allow you to turn in your assignments. If you have questions about these git
+commands, however, you are free to refer to those later lessons.
+
+[basics]: https://github.com/learn-co-curriculum/phase-0-git-version-control-basics
+[pushing-with-git]: https://github.com/learn-co-curriculum/phase-0-git-pushing-code
 
 These commands should be run in the terminal within the directory with changes
 to push. For example with this assignment, you should be running the following
