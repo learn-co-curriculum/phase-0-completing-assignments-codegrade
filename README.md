@@ -19,19 +19,18 @@ submit your assignment to Canvas using a platform called CodeGrade.
 
 The general process is:
 
-- Click the GitHub logo button (the 'OctoCat') in Canvas, we will show you
+- Click the GitHub logo button (the 'OctoCat') in Canvas; we will show you
   exactly which button this is soon.
 - Create a personal copy (a 'fork') of the assignment into your GitHub account.
 - Download your personal copy to your computer (referred to as 'cloning').
 - Complete the required work.
+- Push your completed code back up to your GitHub repo.
 - Submit your completed work in Canvas through the CodeGrade window.
 
 In this assignment, you'll learn the workflow that you will be using to complete
-your assignments. You can follow along with the steps in the video below, or
-continue reading to get a more detailed explanation of the process of working on
-lessons in Canvas.
+your assignments and submit them using CodeGrade.
 
-## Completing Assignments Walkthrough Video
+## Completing and Submitting Assignments
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/EqIGup3zb8A" title="Completing and Submitting Software Engineering Assignments" frameborder="0" allowfullscreen></iframe>
 
@@ -110,26 +109,10 @@ then paste in the copied SSH link from GitHub. It should look something like
 this:
 
 ```console
-$ git clone git@github.com:<your-user-name>/phase-0-completing-assignments-codegrade.git
+$ git clone git@github.com:your-github-username/phase-0-completing-assignments-codegrade.git
 ```
 
 Press enter, and you should see a flurry of terminal activity.
-
-> **Troubleshooting**: If you are a Mac user and you see the following message:
->
-> `xcrun: error: invalid active developer path`
->
-> You need to install the Xcode Command Line Tools. Run the following command to
-> install them:
->
-> ```console
-> $ xcode-select --install
-> ```
->
-> And follow the prompts. Then try running the `git clone` command again. See
-> [this Stack Overflow post](https://stackoverflow.com/a/52522566) for more
-> details. Note that you may need to re-install `xcode-select` any time you
-> update your Mac OS version.
 
 Once the terminal gives you control to type again, a new folder with the GitHub
 name of the assignment will have been created. Change directory into this folder
@@ -261,7 +244,8 @@ tests:
 4. Work on the assignment with those tests in mind.
 5. As you work, run `npm test` in the terminal as many times as you'd like to
    test your code.
-6. Once all your tests are passing, it's time to submit your assignment - or is it?
+6. Once all your tests are passing, it's time to submit your assignment - or is
+   it?
 
 ### Pushing your Changes to GitHub
 
@@ -350,7 +334,7 @@ git push <remote> <branch>
 
 We will learn what a **remote** and **branch** are in greater detail later on.
 
-For now, consider the remote as the repository that is on GitHub - in this case,
+For now, consider the remote as the repository that is on GitHub — in this case,
 the copy of the assignment that you forked into your GitHub account earlier.
 
 It would be tedious if we had to copy and paste the entire repository link every
@@ -379,12 +363,12 @@ git push origin main
 
 Now, finally, when you load your forked version of the assignment on GitHub, you
 should see the `myfile.md` file! With all your work now available on GitHub, you
-can finally submit the assignment.
+can submit the assignment.
 
 ### Submitting an Assignment on CodeGrade
 
-All assignments for this program utilize a tool called CodeGrade to accept and
-automatically grade your work.
+**Note**: Before continuing with the steps below, make sure that you're logged
+in to your GitHub account.
 
 To submit your work for grading, head back to the assignment on Canvas and
 scroll down to the bottom of the page. There, you should see a button that says
@@ -395,23 +379,17 @@ scroll down to the bottom of the page. There, you should see a button that says
 Click on that button, and a new window of the CodeGrade interface should open
 up. As you haven't submitted an assignment for this lab yet, click on the
 "Create submission" button. On the next page that opens, click on the "GitHub"
-button. As long as you're logged onto GitHub, this step should connect CodeGrade
-to your account.
+button. A GitHub screen will open asking you to authorize CodeGrade. (Note: you
+should only have to do this step the first time you create a submission.) Once
+CodeGrade is authorized, as long as you're logged in to GitHub, CodeGrade should
+be connected to your account.
 
 ![Gif showing the CodeGrade interface, creating a submission, and connecting to GitHub](https://imgur.com/aXVrPtW.gif)
 
-> If you were not logged onto GitHub, it should open a window for you to do so. 
-> Log in, and you should see the list of your repos. If it does not open a login 
-> window for you, log in on another window and start again from the Canvas page.
-> If you were logged in and it still did not work, try again, but instead of clicking 
-> the "GitHub" button, click the "Or manually connect your Git repository" link
-> underneath. CodeGrade will walk you through the manual set up, be sure to read
-> and follow their instructions carefully.
-
-Once your GitHub account is connected, whether automatically or manually, you
-should see a list of your repos in the CodeGrade window. Find the repo that
-matches the assignment you're submitting, in this case
-`phase-0-completing-assignments-codegrade`, and click the blue "Connect" button.
+Once your GitHub account is connected, you should see a list of your repos in
+the CodeGrade window. Find the repo that matches the assignment you're
+submitting, in this case `phase-0-completing-assignments-codegrade`, and click
+the blue "Connect" button.
 
 When CodeGrade finishes connecting the repo, it should show you a success
 message with a link to view your submission. Click on that link.
@@ -454,6 +432,87 @@ Whew, that was a lot. While it will take some time in the beginning, the more
 assignments you complete and submit, the easier the process should become. If
 you ever forget a step, that's OK. Come back to this lesson as many times as you
 need until it becomes second nature.
+
+## Troubleshooting
+
+Errors and mistakes can happen, and this section will cover some common ones. If
+your problem is not listed here, please check with an instructor or technical
+coach for guidance.
+
+### I got an error when I tried to clone a lab down to my Mac
+
+If you are a Mac user and you see the following message:
+
+```console
+xcrun: error: invalid active developer path
+```
+
+You need to install the Xcode Command Line Tools. Run the following command to
+install them:
+
+```console
+$ xcode-select --install
+```
+
+And follow the prompts. Then try running the `git clone` command again. See
+[this Stack Overflow post](https://stackoverflow.com/a/52522566) for more
+details. Note that you may need to re-install `xcode-select` any time you
+update your Mac OS version.
+
+### I wasn't able to connect CodeGrade to my GitHub account
+
+First, check to make sure you're logged in to your GitHub account. Then start
+again from the assignment's Canvas page and repeat the steps in the "Submitting
+an Assignment on CodeGrade" section above.
+
+If it still does not work, try again, but instead of clicking the "GitHub"
+button, click the "Or manually connect your Git repository" link underneath.
+CodeGrade will walk you through the manual setup; be sure to read and follow
+their instructions carefully.
+
+### I accidentally connected the wrong repository! How do I remove it and connect the correct one?
+
+Currently, there is no way to directly remove a submission or overwrite one in
+CodeGrade. However, it is still removable via GitHub with the following steps:
+
+![Gif showing the process of deleting a CodeGrade deploy key](https://imgur.com/OCK3r3r.gif)
+
+1. Go to the repository you accidentally connected to CodeGrade.
+
+   - Make sure you're in your forked version of the repo. Check this by looking
+     for your username in the top left.
+
+2. Go to the Settings tab, it should be on the far right.
+3. On the settings page, go down to the "Security" section of the sidebar.
+4. Click on the "Deploy keys" link.
+5. Delete the CodeGrade Deploy key.
+
+If you have multiple CodeGrade Deploy keys because you've submitted the repo
+before, find the right one by checking the date the keys were added.
+
+![Deploy keys highlighting that the dates they were added are different](https://curriculum-content.s3.amazonaws.com/phase-1/codegrade-review/deploy-key-diff-date.png)
+
+If both keys were added on the same day, the key at the bottom of the list is
+typically the latest addition.
+
+![Deploy keys highlighting that the dates are the same, and that the last key on the list is the most recently added](https://curriculum-content.s3.amazonaws.com/phase-1/codegrade-review/deploy-key-same-date.png)
+
+After you've successfully deleted the deploy key, go back through the submission
+process again and be sure to connect the correct repo!
+
+> **Note**: When you first go back through the submission process, the incorrect
+> repo will still be under the "Latest Submissions". That is OK - it will be
+> overridden once you submit a new repo.
+
+### I refreshed the CodeGrade page and it's asking me to log back in. What are my account details to log in?
+
+If you don't remember creating a username and password for CodeGrade, that's
+because you did not! To access CodeGrade, you must always do so from Canvas.
+
+To get back to the submission page for a specific assignment, return to the
+assignment on Canvas and click on the "Load" button at the bottom of the page
+again. If the button is not there due to being clicked once before, refresh the
+Canvas page and it should reappear.
 
 ## Types of Assignments
 
@@ -501,13 +560,15 @@ has been accepted.
 Congratulations, you've completed your first assignment and submitted it to
 CodeGrade! You now know how to work on and submit assignments going forward:
 
-- Click the **Fork** button on the Canvas assignment.
+- Click the **OctoCat** button on the Canvas assignment, then the **Fork**
+  button on the repo page.
 - Once the assignment is forked, clone it down to your local machine.
-- Run `npm install` to download the tools required for the assignment.
+- Run `npm install` to download the tools required to run the tests for the
+  assignment.
 - Run `npm test` to see what tests you have to pass. Run the command as many
   times as you like to check your work as you go.
 - Complete any required work, then run the `git add`, `git commit`, and
-  `git push` commands in the terminal.
+  `git push` commands in the terminal to push your work up to GitHub.
 - Submit your assignment through CodeGrade by selecting your GitHub account,
   then connecting the appropriate repo.
 
