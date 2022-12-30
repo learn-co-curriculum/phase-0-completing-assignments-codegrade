@@ -60,8 +60,8 @@ Clicking the OctoCat icon will open the lesson's GitHub repo. The second icon is
 a flag, which you can use to submit an _issue_ for the lesson (e.g., if you find
 a typo or other error).
 
-To fork an assignment, click the **Fork** button to open its GitHub repo. In the
-top right corner of the repo, you should see a button that says **Fork**.
+To fork an assignment, click the **OctoCat** button to open its GitHub repo. In
+the top right corner of the repo, you should see a button that says **Fork**.
 
 ![Screenshot point out 'Fork' button](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/fork-button.png)
 
