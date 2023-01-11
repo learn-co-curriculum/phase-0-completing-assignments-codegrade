@@ -273,8 +273,10 @@ Git][pushing-with-git]. For now, we'll just cover the surface basics that will
 allow you to turn in your assignments. If you have questions about these git
 commands, however, you are free to refer to those later lessons.
 
-[basics]: https://github.com/learn-co-curriculum/phase-0-git-version-control-basics
-[pushing-with-git]: https://github.com/learn-co-curriculum/phase-0-git-pushing-code
+[basics]:
+  https://github.com/learn-co-curriculum/phase-0-git-version-control-basics
+[pushing-with-git]:
+  https://github.com/learn-co-curriculum/phase-0-git-pushing-code
 
 These commands should be run in the terminal within the directory with changes
 to push. For example with this assignment, you should be running the following
@@ -364,6 +366,9 @@ git push origin main
 Now, finally, when you load your forked version of the assignment on GitHub, you
 should see the `myfile.md` file! With all your work now available on GitHub, you
 can submit the assignment.
+
+**Note:** It is a good habit to get into to go to your repo on GitHub after you
+push to verify that the changes have been pushed successfully.
 
 ### Submitting an Assignment on CodeGrade
 
@@ -456,8 +461,8 @@ $ xcode-select --install
 
 And follow the prompts. Then try running the `git clone` command again. See
 [this Stack Overflow post](https://stackoverflow.com/a/52522566) for more
-details. Note that you may need to re-install `xcode-select` any time you
-update your Mac OS version.
+details. Note that you may need to re-install `xcode-select` any time you update
+your Mac OS version.
 
 ### I wasn't able to connect CodeGrade to my GitHub account
 
@@ -469,6 +474,25 @@ If it still does not work, try again, but instead of clicking the "GitHub"
 button, click the "Or manually connect your Git repository" link underneath.
 CodeGrade will walk you through the manual setup; be sure to read and follow
 their instructions carefully.
+
+### The tests are failing in CodeGrade
+
+1. Make sure that you've connected the correct repo to CodeGrade. You can do
+   that by clicking on the "Code" tab in CodeGrade and verifying that the title
+   of the lab in the README.md file matches the title in Canvas. If you've
+   connected the wrong repo, follow the instructions in the next section.
+
+2. Re-run the tests in your local environment to verify that they are passing.
+
+3. Make sure that your completed code was pushed up to GitHub. To do that,
+   navigate to your repo on GitHub and check that the latest commit is showing.
+   If the code was not pushed to GitHub, follow the instructions in the "Pushing
+   your Changes to GitHub" section above. Once your code is pushed up, the tests
+   will automatically rerun in CodeGrade and the results will be updated in the
+   AutoTest tab. To see this, navigate back to CodeGrade by clicking the button
+   on the assignment page in Canvas, then click on the "Latest submission"
+   button. You may also want to verify that the assignment is showing as
+   completed in Canvas.
 
 ### I accidentally connected the wrong repository! How do I remove it and connect the correct one?
 
@@ -568,7 +592,9 @@ CodeGrade! You now know how to work on and submit assignments going forward:
 - Run `npm test` to see what tests you have to pass. Run the command as many
   times as you like to check your work as you go.
 - Complete any required work, then run the `git add`, `git commit`, and
-  `git push` commands in the terminal to push your work up to GitHub.
+  `git push` commands in the terminal to push your work up to GitHub. Before
+  continuing to the next step, be sure to load your repo on GitHub and verify
+  that the latest commit is shown.
 - Submit your assignment through CodeGrade by selecting your GitHub account,
   then connecting the appropriate repo.
 
