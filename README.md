@@ -368,7 +368,7 @@ should see the `myfile.md` file! With all your work now available on GitHub, you
 can submit the assignment.
 
 **Note:** It is a good habit to get into to go to your repo on GitHub after you
-push to verify that the changes have been pushed successfully.
+push to verify that it completed successfully.
 
 ### Submitting an Assignment on CodeGrade
 
