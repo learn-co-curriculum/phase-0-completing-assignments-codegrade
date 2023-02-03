@@ -321,7 +321,7 @@ message in quotes.
 Let's commit our tracked change. In the terminal, run:
 
 ```bash
-git commit -m "created myfile.md"
+git commit -m "creates myfile.md"
 ```
 
 #### Push changes with `git push`
