@@ -147,7 +147,7 @@ above, you've completed everything you need to do to pass the first test. Now,
 we need to run the tests and find out what the second one is.
 
 First, run `npm install` in the terminal to install the tools necessary to run
-the test. You should again see a flurry of text as dependencies are installed.
+the tests. You should again see a flurry of text as dependencies are installed.
 
 > **Note**: You may get a warnings or a message from the terminal saying there
 > are vulnerabilities, **these are okay to ignore** - they are normal! You
@@ -240,7 +240,7 @@ tests:
    to your machine.
 2. Install the tools needed for the test by running `npm install` (or `npm i`)
    in the terminal.
-3. Run the test initially to see what tests you need to pass.
+3. Run `npm test` initially to see what tests you need to pass.
 4. Work on the assignment with those tests in mind.
 5. As you work, run `npm test` in the terminal as many times as you'd like to
    test your code.
@@ -496,37 +496,30 @@ their instructions carefully.
 
 ### I accidentally connected the wrong repository! How do I remove it and connect the correct one?
 
-Currently, there is no way to directly remove a submission or overwrite one in
-CodeGrade. However, it is still removable via GitHub with the following steps:
+To reconnect your CodeGrade assignment to a different repo, you will simply go
+through the submission process again and select the correct repo. When you do
+that, you will see a message warning you that you have already connected to the
+repo and asking if you want to disconnect the current repo and select a new one:
 
-![Gif showing the process of deleting a CodeGrade deploy key](https://imgur.com/OCK3r3r.gif)
+![disconnect repo button](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments-codegrade/disconnect-repo.png)
 
-1. Go to the repository you accidentally connected to CodeGrade.
-
-   - Make sure you're in your forked version of the repo. Check this by looking
-     for your username in the top left.
-
-2. Go to the Settings tab, it should be on the far right.
-3. On the settings page, go down to the "Security" section of the sidebar.
-4. Click on the "Deploy keys" link.
-5. Delete the CodeGrade Deploy key.
-
-If you have multiple CodeGrade Deploy keys because you've submitted the repo
-before, find the right one by checking the date the keys were added.
-
-![Deploy keys highlighting that the dates they were added are different](https://curriculum-content.s3.amazonaws.com/phase-1/codegrade-review/deploy-key-diff-date.png)
-
-If both keys were added on the same day, the key at the bottom of the list is
-typically the latest addition.
-
-![Deploy keys highlighting that the dates are the same, and that the last key on the list is the most recently added](https://curriculum-content.s3.amazonaws.com/phase-1/codegrade-review/deploy-key-same-date.png)
-
-After you've successfully deleted the deploy key, go back through the submission
-process again and be sure to connect the correct repo!
+Click the "Disconnect and select new repository" button. This will return you to
+the list of repos where you can select the new repo to connect.
 
 > **Note**: When you first go back through the submission process, the incorrect
 > repo will still be under the "Latest Submissions". That is OK - it will be
 > overridden once you submit a new repo.
+
+The full process is:
+
+1. Return to the lab's Canvas page and, if necessary, refresh the page to reload
+   the CodeGrade button.
+2. Click the button and, on the CodeGrade page that opens, click "Create
+   Submission".
+3. Select the new repo to connect.
+4. In the page that opens, click the "Disconnect and select new repository"
+   button.
+5. Select the correct repo once again.
 
 ### I refreshed the CodeGrade page and it's asking me to log back in. What are my account details to log in?
 
