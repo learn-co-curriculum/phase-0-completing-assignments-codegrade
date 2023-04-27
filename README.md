@@ -35,7 +35,7 @@ your assignments and submit them using CodeGrade.
 **Important**: In order to set up CodeGrade on a Canvas assignment it is
 necessary to set a due date. To ensure that all students — regardless of which
 program they are in — will be able to submit their assignments before the due
-date, **default** due dates are set to two years from when the Canvas course is
+date, _default_ due dates are set to two years from when the Canvas course is
 created, well after students must complete the course.
 
 As a result, these _default_ dates **should not** be used as a guide to determine
