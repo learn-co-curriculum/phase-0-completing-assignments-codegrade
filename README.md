@@ -30,19 +30,6 @@ The general process is:
 In this assignment, you'll learn the workflow that you will be using to complete
 your assignments and submit them using CodeGrade.
 
-## Canvas Due Dates
-
-**Important**: In order to set up CodeGrade on a Canvas assignment it is
-necessary to set a due date. To ensure that all students — regardless of which
-program they are in — will be able to submit their assignments before the due
-date, _default_ due dates are set to two years from when the Canvas course is
-created, well after students must complete the course.
-
-As a result, these _default_ dates **should not** be used as a guide to determine
-pacing through the program. Students in the Flex program should instead use the
-Flex milestones to stay on pace, and students in the Live program should follow
-the schedule laid out by their instructor.
-
 ## Completing and Submitting Assignments
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/EqIGup3zb8A" title="Completing and Submitting Software Engineering Assignments" frameborder="0" allowfullscreen></iframe>
